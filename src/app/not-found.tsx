@@ -1,7 +1,10 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function NotFound() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-blue-50 to-white px-4">
-      <img
+      <Image
         src="/bromo.png"
         alt="Ilustrasi 404"
         className="w-72 mb-6"
@@ -10,12 +13,12 @@ export default function NotFound() {
       <p className="text-gray-600 mb-6">
         Halaman yang kamu cari tidak ditemukan.
       </p>
-      <a
+      <Link
         href="/"
         className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
       >
         Kembali ke Beranda
-      </a>
+      </Link>
     </main>
   );
 }

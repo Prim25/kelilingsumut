@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { JSX } from "react";
 
 export default function About(): JSX.Element {
@@ -110,7 +111,7 @@ export default function About(): JSX.Element {
               key={t.name}
               className="bg-white rounded-xl shadow p-6 hover:shadow-lg transition"
             >
-              <img
+              <Image
                 src={t.img}
                 alt={t.name}
                 className="w-28 h-28 mx-auto rounded-full mb-4 object-cover"

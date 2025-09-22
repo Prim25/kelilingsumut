@@ -1,4 +1,6 @@
 import styles from "./Layout.module.css";
+import Image from "next/image";
+
 const destinasi = [
   { name: "Danau Toba", img: "/images/pop1.jpg" },
   { name: "Air Terjun Dua Warna", img: "/images/pop2.jpg" },
@@ -23,7 +25,7 @@ export default function DestinasiPopuler() {
       <div className="grid md:grid-cols-3 gap-6">
         {destinasi.map((d, i) => (
           <div key={i} className="overflow-hidden shadow-lg relative group">
-            <img
+            <Image
               src={d.img}
               alt={d.name}
               className="w-full h-[450px] object-cover transition-transform duration-500 group-hover:h-115 group-hover:-mt-4 group-hover:mb-4"

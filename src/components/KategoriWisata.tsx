@@ -1,3 +1,4 @@
+import Image from "next/image";
 const kategori = [
   { name: "Gunung", img: "/images/gunung.jpg" },
   { name: "Pantai", img: "/images/pantai.jpg" },
@@ -15,7 +16,7 @@ export default function KategoriWisata() {
       <div className="grid md:grid-cols-3 gap-6">
         {kategori.map((k, i) => (
           <div key={i} className="relative rounded-lg overflow-hidden shadow-md">
-            <img src={k.img} alt={k.name} className="w-full h-40 object-cover" />
+            <Image src={k.img} alt={k.name} className="w-full h-40 object-cover" />
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white font-bold text-lg">
               {k.name}
             </div>
