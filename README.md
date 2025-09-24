@@ -34,3 +34,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Team kami
+1. Risky anita saragih
+2. Agita Putri br Bangun
+3. Lundu Adrian Pratama Nababan
+4. Yuni Arfiana P. Br Sinuhaji
+5. Shabrina Shafa Sembiring
+6. Yessi Sesilia Sitompul
+7. Friska Meilani Barus
+8. Muhammad Akbar Raihansyah
+9. Vina Octaviani 
+10. Rian Syahputra Pandiangan
+11. ⁠Yesi Dwi Pratiwi 
+12. ⁠Ezra Tamara Dewi Tambunan
+13. Anggiat Roberto Sinaga
+14. Gres Audia Pasaribu
+15. Eifel
+16. Christine
