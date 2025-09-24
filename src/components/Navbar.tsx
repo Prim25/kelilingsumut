@@ -1,32 +1,73 @@
-import styles from "./Layout.module.css";
+"use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className={` absolute top-0 right-0 left-0 z-20 ${styles.navbar}`}>
-      <div className=" container mx-auto flex gap-36 items-center px-10 md:py-5 md:px-24">
-        <Image
-          src={"/images/logo.png"}
-          alt="Logo Wisata Sumut"
-          width={50}
-          height={50}
-          className="rounded-full md:w-28"
-        ></Image>
-        <ul className="flex gap-6 text-[14px] md:text-2xl ">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-20 transition-all duration-300 ${
+        scrolled
+          ? "bg-blue-600/70 shadow-md backdrop-blur-md"
+          : "bg-transparent"
+      }`}
+    >
+      <div className="container mx-auto flex items-center justify-between px-6 md:px-20 py-3">
+        {/* Logo */}
+        <Link href="/">
+          <Image
+            src="https://drive.google.com/uc?export=view&id=1LVOBQ1LiUNzB05REzPPW2l5TisKz0_fd"
+            alt="Logo Wisata Sumut"
+            width={48}
+            height={48}
+            className="rounded-full border border-white shadow-md object-contain"
+            priority
+          />
+        </Link>
+
+        {/* Menu */}
+        <ul className="flex gap-6 text-sm md:text-lg font-medium text-white">
           <li>
-            <Link href="/">Beranda</Link>
+            <Link href="/" className="hover:text-green-300 transition-colors">
+              Beranda
+            </Link>
           </li>
           <li>
-            <Link href="#artikel">Artikel</Link>
+            <Link
+              href="#artikel"
+              className="hover:text-green-300 transition-colors"
+            >
+              Artikel
+            </Link>
           </li>
           <li>
-            <Link href="#destinasi">Destinasi</Link>
+            <Link
+              href="#destinasi"
+              className="hover:text-green-300 transition-colors"
+            >
+              Destinasi
+            </Link>
           </li>
           <li>
-            <Link href="#tentangkami">Tentang Kami</Link>
+            <Link
+              href="#tentangkami"
+              className="hover:text-green-300 transition-colors"
+            >
+              Tentang Kami
+            </Link>
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }

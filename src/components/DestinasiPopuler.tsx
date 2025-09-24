@@ -1,13 +1,11 @@
 import styles from "./Layout.module.css";
-import Image from "next/image";
-
 const destinasi = [
   { name: "Danau Toba", img: "/images/pop1.jpg" },
   { name: "Air Terjun Dua Warna", img: "/images/pop2.jpg" },
   { name: "Pulau Samosir", img: "/images/viewbg.jpg" },
 ];
 import { FaArrowRight } from "react-icons/fa";
-
+import Image from "next/image"
 export default function DestinasiPopuler() {
   return (
     <section id="destinasi" className="py-16 container mx-auto px-6 md:px-24">
@@ -28,6 +26,7 @@ export default function DestinasiPopuler() {
             <Image
               src={d.img}
               alt={d.name}
+              fill
               className="w-full h-[450px] object-cover transition-transform duration-500 group-hover:h-115 group-hover:-mt-4 group-hover:mb-4"
             />
             <div className="absolute bottom-0 left-0 w-full h-1/4 bg-black/40 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
