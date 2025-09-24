@@ -16,13 +16,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-20 transition-all duration-300 ${
+      className={ `md:px-desk fixed top-0 left-0 right-0 z-20 transition-all duration-300 ${
         scrolled
           ? "bg-blue-600/70 shadow-md backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between px-6 md:px-20 py-3">
+      <div className="container mx-auto flex items-center justify-between  py-3">
         {/* Logo */}
         <Link href="/">
           <Image
@@ -44,7 +44,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="#artikel"
+              href="./artikel"
               className="hover:text-green-300 transition-colors"
             >
               Artikel

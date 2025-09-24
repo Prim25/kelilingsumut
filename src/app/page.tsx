@@ -1,16 +1,15 @@
-import ArtikelEvent from "@/components/ArtikelEvent";
-import DestinasiPopuler from "@/components/DestinasiPopuler";
-import Hero from "@/components/Hero";
-import KategoriWisata from "@/components/KategoriWisata";
-
+import Hero from "../components/Hero";
+import DestinasiPopuler from "../components/DestinasiPopuler";
+import KategoriWisata from "../components/KategoriWisata";
+import ArtikelEvent from "../components/ArtikelEvent";
 
 export default function Home() {
   return (
     <>
-    <Hero/>
-    <DestinasiPopuler/>
-    <KategoriWisata/>
-    <ArtikelEvent/>
+      <Hero />
+      <DestinasiPopuler />
+      <KategoriWisata />
+      <ArtikelEvent />
     </>
   );
 }

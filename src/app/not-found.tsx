@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -7,7 +7,10 @@ export default function NotFound() {
       <Image
         src="/bromo.png"
         alt="Ilustrasi 404"
+        width={300}
+        height={300}
         className="w-72 mb-6"
+        priority
       />
       <h1 className="text-6xl font-bold text-blue-600 mb-4">404</h1>
       <p className="text-gray-600 mb-6">

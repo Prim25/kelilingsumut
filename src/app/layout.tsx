@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar copy";
-import Footer from "@/components/Footer";
-
+import Navbar from "../components/Navbar";
+import Flutter from "../components/Flutter";
 const fontbri = Bricolage_Grotesque({
   variable: "--font-sans",
   subsets: ["latin"],
@@ -29,7 +28,7 @@ export default function RootLayout({
       <body className={`${fontbri.variable} ${fontMono.variable} antialiased`}>
         <Navbar />
         <div>{children}</div>
-        <Footer />
+        <Flutter />
       </body>
     </html>
   );

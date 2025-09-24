@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function KategoriWisata() {
   return (
-    <section className="py-16 container mx-auto px-6">
+    <section className="py-16 container mx-auto px-6 md:px-desk">
       <h2 className="text-2xl font-bold mb-4">Kategori Wisata</h2>
       <p className="mb-8">Temukan destinasi menarik lainnya berdasarkan kategori</p>
 

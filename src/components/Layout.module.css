@@ -1,14 +1,17 @@
 .bgColor {
-  background-color: #1f4cad; /* biru mirip bg-blue-600 */
+    background-color: #1f4cad;
+    /* biru mirip bg-blue-600 */
 }
+
 .navbar {
-  background-color: #1f4cad; /* biru mirip bg-blue-600 */
-  color: white;
-  padding: 1rem;
+    background-color: #1f4cad;
+    /* biru mirip bg-blue-600 */
+    color: white;
+    padding: 1rem;
 }
 
 .footer {
-  background-color: #1f4cad;
-  color: white;
-  padding: 1.5rem;
+    background-color: #1f4cad;
+    color: white;
+    padding: 1.5rem;
 }
