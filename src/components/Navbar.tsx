@@ -52,7 +52,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="#destinasi"
+              href="./destinasi"
               className="hover:text-green-300 transition-colors"
             >
               Destinasi
@@ -60,7 +60,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="#tentangkami"
+              href="/myinfo"
               className="hover:text-green-300 transition-colors"
             >
               Tentang Kami
