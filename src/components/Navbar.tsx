@@ -36,7 +36,7 @@ export default function Navbar() {
         </Link>
 
         {/* Menu */}
-        <ul className="flex gap-6 text-sm md:text-lg font-medium text-white">
+        <ul className="flex gap-10 text-sm md:text-lg font-medium text-white">
           <li>
             <Link href="/" className="hover:text-green-300 transition-colors">
               Beranda

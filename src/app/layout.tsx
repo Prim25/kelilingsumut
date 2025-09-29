@@ -3,6 +3,8 @@ import { Bricolage_Grotesque, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Flutter from "../components/Flutter";
+import { ArticleProvider } from "@/context/ArticleContext";
+
 const fontbri = Bricolage_Grotesque({
   variable: "--font-sans",
   subsets: ["latin"],
@@ -26,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fontbri.variable} ${fontMono.variable} antialiased`}>
-        <Navbar />
-        <div>{children}</div>
-        <Flutter />
+        <ArticleProvider>
+          <Navbar />
+          {children}
+          <Flutter />
+        </ArticleProvider>
       </body>
     </html>
   );

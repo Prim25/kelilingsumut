@@ -37,9 +37,9 @@ export default function DestinasiPopuler() {
               src={d.img}
               alt={d.name}
               fill
-              className=" object-cover transition-transform duration-500 group-hover:h-115 group-hover:-mt-4 group-hover:mb-4"
+              className=" object-cover transition-transform duration-500 group-hover:h-115 group-hover:mb-4"
             />
-            <div className="absolute bottom-0 left-0 w-full h-1/4 bg-black/40 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute bottom-0 left-0 w-full h-1/4 bg-black/0 backdrop-blur-md opacity-10 group-hover:opacity-100 transition-opacity duration-500"></div>
 
             <p className="font-bold text-2xl text-white absolute bottom-10 left-8">
               {d.name}

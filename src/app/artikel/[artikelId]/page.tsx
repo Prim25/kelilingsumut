@@ -1,17 +1,29 @@
+"use client";
 import Image from "next/image";
-import { articles } from "@/app/data/articles";
 import Link from "next/link";
+import { useArticles } from "@/context/ArticleContext";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
+import { IoIosShareAlt } from "react-icons/io";
+
 interface Props {
   params: { artikelId: string };
 }
 export default function ArtikelDetail({ params }: Props) {
-  const article = articles.find((a) => a.id === Number(params.artikelId));
+  // const article = articles.find((a) => a.id === Number(params.artikelId));
+  // if (!article) {
+  //   return <div className="p-6 text-red-600">Artikel tidak ditemukan.</div>;
+  // }
+
+  const { getArticleById, articles } = useArticles();
+  const article = getArticleById(params.artikelId);
   if (!article) {
-    return <div className="p-6 text-red-600">Artikel tidak ditemukan.</div>;
+    return <p className="text-center py-10">Artikel tidak ditemukan...</p>;
   }
 
   return (
-    <main className="container mx-auto px-4 md:px-desk mt-30">
+    <main className="container mx-auto px-4 md:px-desk mt-30 mb-20">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* Artikel */}
         <article className="lg:col-span-2">
@@ -31,64 +43,37 @@ export default function ArtikelDetail({ params }: Props) {
             height={400}
             className="rounded-2xl shadow mb-6"
           />
-          <section className="space-y-6">
-            <p>
-              Tempat wisata Medan nggak pernah mati gaya! Banyak sudut cantik
-              yang bisa buat memori indah di lensa kamera hingga mata kamu
-              sendiri lho!
-            </p>
-            <p>
-              Tunggu apa lagi? Simak dibawah yuk rekomendasi tempat wisata di
-              Medan khusus buat kamu!
-            </p>
-
-            <div className="space-y-6">
-              {[
-                {
-                  no: 1,
-                  title: "Taman Wisata Danau Siombak Marelan",
-                  desc: "Taman wisata Danau Siombak Marelan, merupakan danau buatan yang berlokasi di Jl. Ps. Nippon No.Ujung, Paya Pasir, Kecamatan Medan Marelan, Kota Medan, Sumatera Utara.",
-                },
-                {
-                  no: 2,
-                  title: "Istana Maimun",
-                  desc: "Istana Maimun, salah satu yang menjadi tempat wisata populer di kota Medan. Berlokasi di jalan Brigjend Katamso No. 66, A U R, Kec. Medan Maimun, Kota Medan, Sumatera Utara.",
-                },
-                {
-                  no: 3,
-                  title: "Taman Sri Deli",
-                  desc: "Taman Sri Deli, salah satu taman kota yang berserahan untuk kota Medan. Area taman yang dilengkapi dengan air mancur ini terletak di Jalan Sisingamangaraja, Mesjid, Kecamatan Medan Kota, Kota Medan. Taman ini buka 24 jam dan punya area bermain anak.",
-                },
-                {
-                  no: 4,
-                  title: "Rumah Adat Karo GARISTA",
-                  desc: "Rumah Adat Karo GARISTA, merupakan tujuan wisata yang tepat untuk mempelajari budaya. Terletak di Jalan Bunga Herba 5 Ujung No.89, Simpang Selayang, Kecamatan Medan Selayang, Kota Medan. Tiket masuk Rp 10.000, buka jam 08.00 – 17.00.",
-                },
-                {
-                  no: 5,
-                  title: "Taman Cadika Pramuka",
-                  desc: "Taman ini punya area padang rumput luas, arena bermain, spot foto, dan kafe. Lokasi di Jalan Karya Wisata, Pangkalan Masyhur, Kecamatan Medan Johor. Buka 05.00 – 22.00.",
-                },
-                {
-                  no: 6,
-                  title: "Rumah Tjong A Fie Mansion",
-                  desc: "Rumah Tjong A Fie Mansion, milik seorang pedagang sukses Tionghoa abad ke-19. Gaya arsitektur bergaya Art Deco dengan perpaduan budaya Cina dan Eropa.",
-                },
-                {
-                  no: 7,
-                  title: "Gedung London Sumatera",
-                  desc: "Gedung tua peninggalan Belanda tahun 1906, kini dikenal sebagai Lonsum. Terletak di Jl. Jendral Ahmad Yani No.2, Kesawan, Kota Medan. Dulu hanya bisa dimasuki kalangan elite, sekarang terbuka untuk umum.",
-                },
-              ].map((item) => (
-                <div key={item.no} className="">
-                  <div className="flex items-center gap-2">
-                    <span className="font-bold text-lg">{item.no}.</span>
-                    <h2 className="font-semibold text-lg">{item.title}</h2>
-                  </div>
-                  <p className="text-gray-600">{item.desc}</p>
-                </div>
-              ))}
+          <div className="flex items-center gap-3 mb-5">
+            <div className="bg-primary p-3 rounded-full text-white">
+              <FaInstagram className="text-[14px]" />
             </div>
+            <div className="bg-primary p-3 rounded-full text-white">
+              <FaTiktok className="text-[14px]" />
+            </div>
+            <div className="bg-primary p-3 rounded-full text-white">
+              <RiTwitterXFill className="text-[14px]" />
+            </div>
+            <div className="bg-primary p-3 rounded-full text-white">
+              <IoIosShareAlt className="text-[14px]" />
+            </div>
+          </div>
+          <section className="space-y-6">
+            <p className="mb-5">{article.secIntro}</p>
+            <div className="space-y-3">
+              {article.destinations.map((dest, i) => {
+                return (
+                  <div key={dest.id} className="">
+                    <h2 className="text-lg font-semibold mb-2">
+                      {i + 1}. {dest.title}
+                    </h2>
+                    <p className="">{dest.description}</p>
+                  </div>
+                );
+              })}
+            </div>
+            {article.outro && (
+              <p className="mt-8 text-gray-800">{article.outro}</p>
+            )}
           </section>
         </article>
 
@@ -96,7 +81,7 @@ export default function ArtikelDetail({ params }: Props) {
         <aside className="space-y-3 mt-42">
           {articles
             .filter((a) => a.id !== article.id)
-            .slice(0, 3)
+            .slice(0, 5)
             .map((item, i) => (
               <Link
                 key={i}
