@@ -23,7 +23,7 @@ export default function ArtikelDetail({ params }: Props) {
   }
 
   return (
-    <main className="container mx-auto px-4 md:px-desk mt-30 mb-20">
+    <main className="container mx-auto px-4 md:px-desk mt-5 mb-20">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* Artikel */}
         <article className="lg:col-span-2">

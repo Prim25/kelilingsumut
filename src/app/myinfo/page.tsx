@@ -18,7 +18,7 @@ interface TeamGroup {
 
 // Project Manager
 const projectManager: TeamMember = {
-  name: "Andrian Berlindo Crispi, S.H., S.Kom., M.Kom.",
+  name: "Andrian Reinaldo Crispin, S.H., S.Kom., M.Kom.",
   role: "Project Manager",
   image: "https://drive.google.com/uc?id=1nhoE2w1sFzSGD6ZzeBTLBcjif-WmwyoY",
   bgColor: "bg-white",
@@ -44,7 +44,7 @@ const teamGroups: TeamGroup[] = [
         bgColor: "bg-orange-100",
       },
       {
-        name: "Rian Syahputra Pardangan",
+        name: "Rian Syahputra Pandiangan",
         role: "Anggota",
         image:
           "https://drive.google.com/uc?id=1-YZ-FinxDsU7qJX41qZTS4WRr1KxFkbV",
@@ -63,21 +63,21 @@ const teamGroups: TeamGroup[] = [
         bgColor: "bg-purple-100",
       },
       {
-        name: "Yuni Arliana P. br Sinuhaji",
+        name: "Yuni Arfiana P. br Sinuhaji",
         role: "Anggota",
         image:
           "https://drive.google.com/uc?id=1qdapeLp_bYEU8bAG8Rf5WI8cNrfZC2XZ",
         bgColor: "bg-purple-100",
       },
       {
-        name: "Yesi Betalia Sitompul",
+        name: "Yesi Sesilia Sitompul",
         role: "Anggota",
         image:
           "https://drive.google.com/uc?id=1489DjHufLrS8KgsKhDUa4k8bNbtwgzqd",
         bgColor: "bg-purple-100",
       },
       {
-        name: "Shabrinia Shofia S",
+        name: "Shabrina Shafa Sembiring ",
         role: "Anggota",
         image:
           "https://drive.google.com/uc?id=1yswPm6iNu-R0luO78wyJQUiU0QPee1FB",
@@ -96,14 +96,14 @@ const teamGroups: TeamGroup[] = [
         bgColor: "bg-green-100",
       },
       {
-        name: "Risky Anjelo Sipayung",
+        name: "Risky Anita Saragih",
         role: "Anggota",
         image:
           "https://drive.google.com/uc?id=1UG9EkbFut9Z1ClhLO854VhD-JAb_IWqX",
         bgColor: "bg-green-100",
       },
       {
-        name: "Friska Meilani S",
+        name: "Friska Meilani Barus",
         role: "Anggota",
         image:
           "https://drive.google.com/uc?id=1vo0eoQiOTxk2f377UOQFAOxCvaamQzpK",
@@ -129,7 +129,7 @@ const teamGroups: TeamGroup[] = [
         bgColor: "bg-yellow-100",
       },
       {
-        name: "Ezra Tamara Dewi T",
+        name: "Ezra Tamara Dewi Tambunan",
         role: "Anggota",
         image:
           "https://drive.google.com/uc?id=1CAfpf4xHrpXqdnyYaxZbx_AZ3GwJJM-6",
@@ -155,7 +155,7 @@ const teamGroups: TeamGroup[] = [
         bgColor: "bg-blue-100",
       },
       {
-        name: "Muhammad Akbar Ramdhanyah",
+        name: "Muhammad Akbar Raihansyah",
         role: "Anggota",
         image:
           "https://drive.google.com/uc?id=1431yCbTwU5dWmjkfyvIdgSr3BGBHrz8o",
@@ -164,20 +164,19 @@ const teamGroups: TeamGroup[] = [
     ],
   },
 ];
-
 const TentangKamiPage: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   return (
     <div className="font-sans bg-gray-100">
       {/* Hero Section */}
-      <section className="relative">
+      <section className="relative md:h-[350px]">
         <Image
-          src="/images/banner.jpg"
+          src="https://drive.google.com/uc?export=view&id=1bMuhhfnYRNiSanLPJP3ssJxqupMd55AW"
           alt="Banner"
-          width={1920}
-          height={600}
-          className="w-full h-72 object-cover"
+          sizes="100vw"
+          fill
+          className="object-cover object-bottom"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black/40">
           <h1 className="text-4xl md:text-5xl font-bold text-white text-center">
@@ -211,7 +210,7 @@ const TentangKamiPage: React.FC = () => {
       </section>
 
       {/* Visi & Misi */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-gray-50 px-desk">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <motion.div

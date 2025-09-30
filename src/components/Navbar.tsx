@@ -2,25 +2,33 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-
+  const pathname = usePathname();
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    if (pathname === "/") {
+      const handleScroll = () => {
+        setScrolled(window.scrollY > 20);
+      };
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
+  }, [pathname]);
+
+  const isLanding = pathname === "/";
+  const navClass = isLanding
+    ? scrolled
+      ? "bg-blue-600/70 shadow-md backdrop-blur-md"
+      : "bg-transparent"
+    : "bg-primary";
 
   return (
     <nav
-      className={ `md:px-desk fixed top-0 left-0 right-0 z-20 transition-all duration-300 ${
-        scrolled
-          ? "bg-blue-600/70 shadow-md backdrop-blur-md"
-          : "bg-transparent"
-      }`}
+      className={`md:px-desk fixed top-0 left-0 right-0 z-20 transition-all duration-300 ${
+        isLanding ? "fixed" : "relative"
+      } ${navClass}`}
     >
       <div className="container mx-auto flex items-center justify-between  py-3">
         {/* Logo */}

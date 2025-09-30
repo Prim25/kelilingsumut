@@ -71,7 +71,7 @@ const ArtikelPage = () => {
   };
 
   return (
-    <div className="mt-24">
+    <div className="mb-16">
       <div className="bg-[#EEF5FF] py-10 md:px-desk">
         <h1 className="text-3xl font-bold mb-10 text-center">Event Terbaru</h1>
         <div

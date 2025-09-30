@@ -26,22 +26,28 @@ export default function DestinasiPopuler() {
             Destinasi populer di Sumatera Utara yang wajib dikunjungi
           </p>
         </div>
-        <div className={`${styles.bgColor} p-4 rounded-full text-xl`}>
+        <div className={`${styles.bgColor} p-4 text-xl rounded-full`}>
           <FaArrowRight className="text-white" />
         </div>
       </div>
       <div className="grid md:grid-cols-3 gap-6">
         {destinasi.map((d, i) => (
-          <div key={i} className="overflow-hidden shadow-lg relative group w-full h-[450px]">
+          <div
+            key={i}
+            className="relative group w-full h-[450px] overflow-hidden shadow-lg"
+          >
             <Image
               src={d.img}
               alt={d.name}
               fill
-              className=" object-cover transition-transform duration-500 group-hover:h-115 group-hover:mb-4"
+              className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
             />
-            <div className="absolute bottom-0 left-0 w-full h-1/4 bg-black/0 backdrop-blur-md opacity-10 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-            <p className="font-bold text-2xl text-white absolute bottom-10 left-8">
+            {/* blur bar di bawah */}
+            <div className="absolute bottom-0 left-0 w-full h-1/4 bg-black/0 backdrop-blur-md opacity-10 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+            {/* text muncul naik */}
+            <p className="absolute bottom-10 left-8 text-2xl font-bold text-white opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700">
               {d.name}
             </p>
           </div>
