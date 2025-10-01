@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ["drive.google.com"], // tambahin domain eksternal di sini
-  },
+    images: {
+        remotePatterns: [{
+            protocol: "https",
+            hostname: "drive.google.com",
+        }, ],
+    },
 };
 
 module.exports = nextConfig;

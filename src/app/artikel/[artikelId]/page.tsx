@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useArticles } from "@/context/ArticleContext";
@@ -6,18 +7,17 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { IoIosShareAlt } from "react-icons/io";
+import { use } from "react";
 
 interface Props {
-  params: { artikelId: string };
+  params: Promise<{ artikelId: string }>; // params sekarang Promise
 }
-export default function ArtikelDetail({ params }: Props) {
-  // const article = articles.find((a) => a.id === Number(params.artikelId));
-  // if (!article) {
-  //   return <div className="p-6 text-red-600">Artikel tidak ditemukan.</div>;
-  // }
 
+export default function ArtikelDetail({ params }: Props) {
+  const { artikelId } = use(params); // unwrap params
   const { getArticleById, articles } = useArticles();
-  const article = getArticleById(params.artikelId);
+
+  const article = getArticleById(artikelId);
   if (!article) {
     return <p className="text-center py-10">Artikel tidak ditemukan...</p>;
   }
@@ -38,11 +38,12 @@ export default function ArtikelDetail({ params }: Props) {
           </p>
           <Image
             src={article.image}
-            alt="Danau Siombak"
+            alt={article.title}
             width={800}
             height={400}
             className="rounded-2xl shadow mb-6"
           />
+
           <div className="flex items-center gap-3 mb-5">
             <div className="bg-primary p-3 rounded-full text-white">
               <FaInstagram className="text-[14px]" />
@@ -57,19 +58,18 @@ export default function ArtikelDetail({ params }: Props) {
               <IoIosShareAlt className="text-[14px]" />
             </div>
           </div>
+
           <section className="space-y-6">
             <p className="mb-5">{article.secIntro}</p>
             <div className="space-y-3">
-              {article.destinations.map((dest, i) => {
-                return (
-                  <div key={dest.id} className="">
-                    <h2 className="text-lg font-semibold mb-2">
-                      {i + 1}. {dest.title}
-                    </h2>
-                    <p className="">{dest.description}</p>
-                  </div>
-                );
-              })}
+              {(article.destinations || []).map((dest, i) => (
+                <div key={dest.id}>
+                  <h2 className="text-lg font-semibold mb-2">
+                    {i + 1}. {dest.title}
+                  </h2>
+                  <p>{dest.description}</p>
+                </div>
+              ))}
             </div>
             {article.outro && (
               <p className="mt-8 text-gray-800">{article.outro}</p>
