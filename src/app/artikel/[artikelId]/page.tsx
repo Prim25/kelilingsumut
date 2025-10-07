@@ -7,14 +7,13 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { IoIosShareAlt } from "react-icons/io";
-import { use } from "react";
 
-interface Props {
-  params: Promise<{ artikelId: string }>; // params sekarang Promise
+interface ArtikelDetailProps {
+  params: { artikelId: string };
 }
 
-export default function ArtikelDetail({ params }: Props) {
-  const { artikelId } = use(params); // unwrap params
+export default function ArtikelDetail({ params }: ArtikelDetailProps) {
+  const { artikelId } = params 
   const { getArticleById, articles } = useArticles();
 
   const article = getArticleById(artikelId);

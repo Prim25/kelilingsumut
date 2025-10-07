@@ -35,6 +35,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1rxSd28npDrJNfMy3hxsyW4-P_XnRYPIX",
         bgColor: "bg-orange-100",
+        linkGithub: "https://github.com/octvinaa",
       },
       {
         name: "Agita Putri Br Bangun",
@@ -42,6 +43,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1CmVnVLEmZkaWUbEy82PM1GMJo9eOuJ20",
         bgColor: "bg-orange-100",
+        linkGithub: "https://share.google/CF4lLZrjb20lP3a76",
       },
       {
         name: "Rian Syahputra Pandiangan",
@@ -49,6 +51,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1-YZ-FinxDsU7qJX41qZTS4WRr1KxFkbV",
         bgColor: "bg-orange-100",
+        linkGithub: "",
       },
     ],
   },
@@ -61,6 +64,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1WG0py6OyPJwdvh1kRDhrVDUYffaETB3H",
         bgColor: "bg-purple-100",
+        linkGithub: "https://github.com/ChristineEster",
       },
       {
         name: "Yuni Arfiana P. br Sinuhaji",
@@ -68,6 +72,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1qdapeLp_bYEU8bAG8Rf5WI8cNrfZC2XZ",
         bgColor: "bg-purple-100",
+        linkGithub: "https://github.com/yuniarfianaaa",
       },
       {
         name: "Yesi Sesilia Sitompul",
@@ -75,6 +80,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1489DjHufLrS8KgsKhDUa4k8bNbtwgzqd",
         bgColor: "bg-purple-100",
+        linkGithub: "https://github.com/yessisesiliasitompul13-ctrl",
       },
       {
         name: "Shabrina Shafa Sembiring ",
@@ -82,6 +88,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1yswPm6iNu-R0luO78wyJQUiU0QPee1FB",
         bgColor: "bg-purple-100",
+        linkGithub: "https://github.com/shabrinasembiring14",
       },
     ],
   },
@@ -101,6 +108,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1UG9EkbFut9Z1ClhLO854VhD-JAb_IWqX",
         bgColor: "bg-green-100",
+        linkGithub: "https://github.com/riskyanita",
       },
       {
         name: "Friska Meilani Barus",
@@ -108,6 +116,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1vo0eoQiOTxk2f377UOQFAOxCvaamQzpK",
         bgColor: "bg-green-100",
+        linkGithub: "https://github.com/fbarus13-design",
       },
     ],
   },
@@ -120,6 +129,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1SPzBlasEjkfRNU4QdFlW8MvHr8eo3Tdh",
         bgColor: "bg-yellow-100",
+        linkGithub: "https://github.com/etfngl",
       },
       {
         name: "Yesi Dwi Pratiwi",
@@ -127,6 +137,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1maUVSVNrKm1MPd7SnASSoZd00cVv7jBf",
         bgColor: "bg-yellow-100",
+        linkGithub: "https://github.com/Yesidwipratiwi",
       },
       {
         name: "Ezra Tamara Dewi Tambunan",
@@ -134,6 +145,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1CAfpf4xHrpXqdnyYaxZbx_AZ3GwJJM-6",
         bgColor: "bg-yellow-100",
+        linkGithub: "https://github.com/ezracans",
       },
     ],
   },
@@ -146,13 +158,16 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1OuWegEG_toVLH7rqRTMC0dR1YuCgOr0U",
         bgColor: "bg-blue-100",
+        linkGithub: "",
       },
       {
         name: "Gres Audia Pasaribu",
         role: "Anggota",
+        linkGithub: "https://github.com/gresaudiapasaribu",
         image:
           "https://drive.google.com/uc?id=1m-MKo6bmViIoRgNNKjwr5e_fsXJdPeeW",
         bgColor: "bg-blue-100",
+        linkGithub: "",
       },
       {
         name: "Muhammad Akbar Raihansyah",
@@ -160,6 +175,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1431yCbTwU5dWmjkfyvIdgSr3BGBHrz8o",
         bgColor: "bg-blue-100",
+        linkGithub: "",
       },
     ],
   },
@@ -168,7 +184,7 @@ const TentangKamiPage: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   return (
-    <div className="font-sans bg-gray-100">
+    <div className="bg-gray-100 font-display">
       {/* Hero Section */}
       <section className="relative md:h-[350px]">
         <Image
@@ -179,7 +195,7 @@ const TentangKamiPage: React.FC = () => {
           className="object-cover object-bottom"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-          <h1 className="text-4xl md:text-5xl font-bold text-white text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white text-center font-heading">
             Liburan Cerdas, Pengalaman Berkesan.
           </h1>
         </div>
@@ -252,8 +268,10 @@ const TentangKamiPage: React.FC = () => {
 
       {/* Project Manager */}
       <section className="py-12 bg-white">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6">Kenalan Dengan Tim Kami</h2>
+        <div className="container mx-auto px-6 text-center font-display">
+          <h2 className="text-3xl font-bold mb-6 font-heading">
+            Kenalan Dengan Tim Kami
+          </h2>
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="mx-auto w-60 p-6 rounded-xl shadow-lg bg-gradient-to-br from-blue-100 to-white flex flex-col items-center cursor-pointer"
@@ -312,29 +330,31 @@ const TentangKamiPage: React.FC = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <motion.div
-              initial={{ scale: 0.7, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.7, opacity: 0 }}
-              transition={{ type: "spring", stiffness: 200 }}
-              className="relative bg-white p-6 rounded-xl shadow-2xl max-w-md w-full text-center"
-            >
-              <button
-                onClick={() => setSelectedMember(null)}
-                className="absolute top-2 right-2 text-gray-600 hover:text-black text-xl"
+            <a href={selectedMember.linkGithub}>
+              <motion.div
+                initial={{ scale: 0.7, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.7, opacity: 0 }}
+                transition={{ type: "spring", stiffness: 200 }}
+                className="relative bg-white p-6 rounded-xl shadow-2xl max-w-md w-full text-center"
               >
-                ✕
-              </button>
-              <Image
-                src={selectedMember.image}
-                alt={selectedMember.name}
-                width={250}
-                height={250}
-                className="rounded-full border-4 border-gray-200 shadow-md mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-bold">{selectedMember.name}</h3>
-              <p className="text-gray-600">{selectedMember.role}</p>
-            </motion.div>
+                <button
+                  onClick={() => setSelectedMember(null)}
+                  className="absolute top-2 right-2 text-gray-600 hover:text-black text-xl"
+                >
+                  ✕
+                </button>
+                <Image
+                  src={selectedMember.image}
+                  alt={selectedMember.name}
+                  width={250}
+                  height={250}
+                  className="rounded-full border-4 border-gray-200 shadow-md mx-auto mb-4 object-cover"
+                />
+                <h3 className="text-xl font-bold">{selectedMember.name}</h3>
+                <p className="text-gray-600">{selectedMember.role}</p>
+              </motion.div>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

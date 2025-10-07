@@ -34,18 +34,30 @@ const Footer: React.FC = () => {
 
         {/* Partner / Logo */}
         <div className="flex flex-col space-y-4 items-center md:items-end">
-          <Image
-            src="https://drive.google.com/uc?export=view&id=1EhJQ1IJsdCEEkyvIy2s7UGwxfyGAobGD" // logo Kementerian
-            alt="Kementerian Ketenagakerjaan RI"
-            width={120}
-            height={60}
-          />
-          <Image
-            src="https://drive.google.com/uc?export=view&id=1OM3VmZZkmJvf01G_SwhnUrdzNvBBojbI" // logo Universitas Prima Indonesia
-            alt="Universitas Prima Indonesia"
-            width={120}
-            height={60}
-          />
+          <a
+            href="https://bbplkmedan.kemnaker.go.id/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="https://drive.google.com/uc?export=view&id=1EhJQ1IJsdCEEkyvIy2s7UGwxfyGAobGD" // logo Kementerian
+              alt="Kementerian Ketenagakerjaan RI"
+              width={120}
+              height={60}
+            />
+          </a>
+          <a
+            href="https://unprimdn.ac.id/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="https://drive.google.com/uc?export=view&id=1OM3VmZZkmJvf01G_SwhnUrdzNvBBojbI" // logo Universitas Prima Indonesia
+              alt="Universitas Prima Indonesia"
+              width={120}
+              height={60}
+            />
+          </a>
         </div>
       </div>
 

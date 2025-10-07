@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Konten */}
-      <div className="relative z-10 container mx-auto px-6 md:px-24">
+      <div className="relative z-10 container mx-auto px-6 md:px-24 font-heading">
         <h1 className="text-4xl md:text-5xl font-extrabold leading-tight max-w-[500px]">
           Discover <span className="text-green-400">Sumut</span>, where nature
           meets culture.
