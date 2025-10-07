@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image"; // PENTING
+import Image from "next/image";
 
 type Destination = {
   id: number;
@@ -44,8 +44,15 @@ export default function DestinationDetailPage() {
     );
   }
 
+  // Filter rekomendasi sesuai kategori
+  const filteredRecommendations = allDestinations
+    .filter((d) => d.id.toString() !== id) // hindari destinasi yang sedang dibuka
+    .filter((d) => d.kategori === destination.kategori) // hanya kategori sama
+    .slice(0, 5); // ambil maksimal 5
+
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
+      {/* KONTEN UTAMA */}
       <div className="lg:col-span-2">
         <p className="text-sm text-blue-600 font-semibold uppercase mb-2">
           {destination.kategori}
@@ -59,7 +66,7 @@ export default function DestinationDetailPage() {
           Tim Keliling Sumut · 01 Oktober 2025 · Waktu baca 4 menit
         </p>
 
-        {/* gambar utama */}
+        {/* GAMBAR UTAMA */}
         {destination.gambarUtama && (
           <Image
             src={destination.gambarUtama}
@@ -70,14 +77,14 @@ export default function DestinationDetailPage() {
           />
         )}
 
-        {/* galeri */}
+        {/* GALERI */}
         {destination.galeri?.length > 0 && (
           <div className="flex gap-3 mb-6 overflow-x-auto">
             {destination.galeri.map((img, idx) => (
               <Image
                 key={idx}
                 src={img}
-                alt={`${destination.nama} ${idx}`}
+                alt={`${destination.nama} ${idx + 1}`}
                 width={200}
                 height={120}
                 className="w-48 h-28 rounded-lg object-cover border shadow-sm hover:scale-105 transition"
@@ -86,21 +93,20 @@ export default function DestinationDetailPage() {
           </div>
         )}
 
-        {/* deskripsi */}
+        {/* DESKRIPSI */}
         <article className="prose prose-lg max-w-none text-justify leading-relaxed text-gray-700">
           {destination.deskripsi}
         </article>
       </div>
 
-      {/* rekomendasi */}
+      {/* REKOMENDASI */}
       <aside className="space-y-4">
         <h2 className="text-lg font-bold text-gray-800 mb-4">
-          Rekomendasi Destinasi
+          Rekomendasi Destinasi {destination.kategori}
         </h2>
-        {allDestinations
-          .filter((d) => d.id.toString() !== id)
-          .slice(0, 5)
-          .map((d) => (
+
+        {filteredRecommendations.length > 0 ? (
+          filteredRecommendations.map((d) => (
             <Link
               key={d.id}
               href={`/destinasi/${d.id}`}
@@ -122,7 +128,12 @@ export default function DestinationDetailPage() {
                 </h3>
               </div>
             </Link>
-          ))}
+          ))
+        ) : (
+          <p className="text-gray-500 text-sm">
+            Belum ada destinasi lain di kategori ini.
+          </p>
+        )}
       </aside>
     </div>
   );

@@ -103,7 +103,7 @@ export default function ArtikelDetail({ params }: ArtikelDetailProps) {
                   </h3>
                   <p className="text-xs text-gray-500">{item.date}</p>
                 </div>
-              </Link>
+              </Link>         
             ))}
         </aside>
       </div>
