@@ -28,28 +28,7 @@ const ArtikelPage = () => {
       image: "/images/event4.webp",
       title: "Maniamolo Fest 2025",
       date: "23 Nov 2025- 26 Nov 2025",
-    },
-    {
-      image: "/images/event4.webp",
-      title: "Event ke-5",
-      date: "01 Des 2025- 03 Des 2025",
-    },
-    {
-      image: "/images/event3.webp",
-      title: "Aquabike jetsky world",
-      date: "03 Nov 2025- 05 Nov 2025",
-    },
-
-    {
-      image: "/images/event4.webp",
-      title: "Event ke-6",
-      date: "10 Des 2025- 12 Des 2025",
-    },
-    {
-      image: "/images/event3.webp",
-      title: "Aquabike jetsky world championship 2025",
-      date: "03 Nov 2025- 05 Nov 2025",
-    },
+    }, 
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);

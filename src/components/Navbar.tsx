@@ -26,11 +26,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`md:px-desk py-5 fixed top-0 left-0 right-0 z-20 transition-all duration-300 ${
+      className={`md:px-desk py-3 fixed top-0 left-0 right-0 z-20 transition-all duration-300 ${
         isLanding ? "fixed" : "relative"
       } ${navClass}`}
     >
-      <div className="container mx-auto flex items-center justify-between  py-3">
+      <div className="container mx-auto flex items-center justify-between  py-1">
         {/* Logo */}
         <Link href="/">
           <Image
@@ -52,7 +52,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="./artikel"
+              href="/artikel"
               className="hover:text-green-300 transition-colors"
             >
               Artikel
@@ -60,7 +60,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="./destinasi"
+              href="/destinasi"
               className="hover:text-green-300 transition-colors"
             >
               Destinasi

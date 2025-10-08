@@ -6,7 +6,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-blue-800 text-white py-8 px-6">
+    <footer className="bg-blue-800 text-white py-8 px-6 md:px-desk">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
         {/* Logo + Deskripsi */}
         <div className="flex items-start space-x-4">

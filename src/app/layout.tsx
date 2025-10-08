@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Flutter from "../components/Flutter";
 import { ArticleProvider } from "@/context/ArticleContext";
+import { DestinationProvider } from "@/context/ArticleDestinasi";
 
 const fontbri = Bricolage_Grotesque({
   variable: "--font-sans",
@@ -28,11 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fontbri.variable} ${fontMono.variable} antialiased`}>
-        <ArticleProvider>
-          <Navbar />
-          {children}
-          <Flutter />
-        </ArticleProvider>
+        <DestinationProvider>
+          <ArticleProvider>
+            <Navbar />
+            {children}
+            <Flutter />
+          </ArticleProvider>
+        </DestinationProvider>
       </body>
     </html>
   );

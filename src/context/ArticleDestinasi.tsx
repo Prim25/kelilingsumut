@@ -10,11 +10,12 @@ import {
 
 type Destination = {
   id: number;
-  title: string;
-  category: string;
-  image: string;
-  description: string;
-  article?: string; // opsional kalau ada artikel detail
+  nama: string;
+  kategori: string;
+  gambarUtama: string;
+  deskripsi: string;
+  deskripsiUtama: string;
+  galeri: string[];
 };
 
 type DestinationContextType = {
@@ -22,9 +23,9 @@ type DestinationContextType = {
   getDestinationById: (id: string) => Destination | undefined;
 };
 
-export const DestinationContext = createContext<DestinationContextType | undefined>(
-  undefined
-);
+export const DestinationContext = createContext<
+  DestinationContextType | undefined
+>(undefined);
 
 export function DestinationProvider({ children }: { children: ReactNode }) {
   const [destinations, setDestinations] = useState<Destination[]>([]);
@@ -57,7 +58,9 @@ export function DestinationProvider({ children }: { children: ReactNode }) {
 export function useDestinations() {
   const context = useContext(DestinationContext);
   if (!context) {
-    throw new Error("useDestinations harus digunakan di dalam DestinationProvider");
+    throw new Error(
+      "useDestinations harus digunakan di dalam DestinationProvider"
+    );
   }
   return context;
 }

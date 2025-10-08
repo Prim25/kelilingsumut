@@ -2,18 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
 @import "tailwindcss";
 
+/* ngilangin scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
 @theme {
   --color-primary: #1f4cad;
   --spacing-desk: 6rem;
   /* custom fonts */
   --font-heading: "Poppins", sans-serif;
   --font-display: "Open Sans ", sans-serif;
-}
-/* ini custom biar sembunyiin scrollbar */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
-}
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE dan Edge */
-  scrollbar-width: none; /* Firefox */
 }

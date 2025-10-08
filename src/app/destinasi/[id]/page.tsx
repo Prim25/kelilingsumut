@@ -18,6 +18,7 @@ export default function DestinationDetailPage() {
   const { id } = useParams();
   const [destination, setDestination] = useState<Destination | null>(null);
   const [allDestinations, setAllDestinations] = useState<Destination[]>([]);
+  const [mainImage, setMainImage] = useState<string>(""); // 🖼️ gambar utama dinamis
 
   useEffect(() => {
     fetch("/data/destinations.json")
@@ -29,6 +30,9 @@ export default function DestinationDetailPage() {
         if (id && arr.length > 0) {
           const found = arr.find((d) => d.id.toString() === id);
           setDestination(found || null);
+          if (found) {
+            setMainImage(found.gambarUtama); // 🖼️ set gambar utama awal
+          }
         }
       })
       .catch((err) => console.error("Error loading destinations:", err));
@@ -44,14 +48,13 @@ export default function DestinationDetailPage() {
     );
   }
 
-  // Filter rekomendasi sesuai kategori
   const filteredRecommendations = allDestinations
-    .filter((d) => d.id.toString() !== id) // hindari destinasi yang sedang dibuka
-    .filter((d) => d.kategori === destination.kategori) // hanya kategori sama
-    .slice(0, 5); // ambil maksimal 5
+    .filter((d) => d.id.toString() !== id)
+    .filter((d) => d.kategori === destination.kategori)
+    .slice(0, 5);
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
+    <div className="max-w-7xl mx-auto px-6 md:px-desk py-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
       {/* KONTEN UTAMA */}
       <div className="lg:col-span-2">
         <p className="text-sm text-blue-600 font-semibold uppercase mb-2">
@@ -67,28 +70,35 @@ export default function DestinationDetailPage() {
         </p>
 
         {/* GAMBAR UTAMA */}
-        {destination.gambarUtama && (
+        {mainImage && (
           <Image
-            src={destination.gambarUtama}
+            src={mainImage}
             alt={destination.nama}
             width={800}
             height={400}
-            className="w-full h-[400px] object-cover rounded-xl shadow mb-6"
+            className="w-full h-[400px] object-cover rounded-xl shadow mb-6 transition-all duration-300"
           />
         )}
 
         {/* GALERI */}
         {destination.galeri?.length > 0 && (
-          <div className="flex gap-3 mb-6 overflow-x-auto">
+          <div className="flex gap-3 mb-6 overflow-x-auto scrollbar-hide">
             {destination.galeri.map((img, idx) => (
-              <Image
+              <button
                 key={idx}
-                src={img}
-                alt={`${destination.nama} ${idx + 1}`}
-                width={200}
-                height={120}
-                className="w-48 h-28 rounded-lg object-cover border shadow-sm hover:scale-105 transition"
-              />
+                onClick={() => setMainImage(img)} // ✅ ubah gambar utama
+                className={`relative group focus:outline-none ${
+                  mainImage === img ? "ring-2 ring-blue-500" : ""
+                }`}
+              >
+                <Image
+                  src={img}
+                  alt={`${destination.nama} ${idx + 1}`}
+                  width={200}
+                  height={120}
+                  className="w-48 h-28 rounded-lg object-cover border shadow-sm group-hover:scale-105 transition-transform duration-300"
+                />
+              </button>
             ))}
           </div>
         )}
@@ -100,7 +110,7 @@ export default function DestinationDetailPage() {
       </div>
 
       {/* REKOMENDASI */}
-      <aside className="space-y-4">
+      <aside className="space-y-10 mt-26">
         <h2 className="text-lg font-bold text-gray-800 mb-4">
           Rekomendasi Destinasi {destination.kategori}
         </h2>
@@ -110,20 +120,23 @@ export default function DestinationDetailPage() {
             <Link
               key={d.id}
               href={`/destinasi/${d.id}`}
-              className="flex gap-3 p-3 bg-white rounded-lg shadow hover:shadow-md transition"
+              className="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-gray-100"
             >
-              <Image
-                src={d.gambarUtama}
-                alt={d.nama}
-                width={96}
-                height={64}
-                className="w-24 h-16 object-cover rounded"
-              />
-              <div>
-                <p className="text-sm text-blue-600 font-semibold">
+              <div className="overflow-hidden rounded-xl w-28 h-20 flex-shrink-0">
+                <Image
+                  src={d.gambarUtama}
+                  alt={d.nama}
+                  width={112}
+                  height={80}
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+
+              <div className="flex flex-col justify-between">
+                <p className="text-xs uppercase tracking-wide text-blue-500 font-semibold mb-1">
                   {d.kategori}
                 </p>
-                <h3 className="font-bold text-gray-900 leading-snug">
+                <h3 className="font-semibold text-gray-900 text-lg leading-tight hover:text-blue-600 transition-colors duration-200">
                   {d.nama}
                 </h3>
               </div>

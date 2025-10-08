@@ -22,9 +22,9 @@ const ArtikelEvent = () => {
             Lihat artikel dan event menarik mengenai destinasi wisata favoritmu
           </p>
         </div>
-        <div className={`${styles.bgColor} p-4 rounded-full text-xl`}>
+        <Link href={"/artikel"} className={`bg-primary hover:bg-primary/90 p-4 rounded-full text-xl`}>
           <FaArrowRight className="text-white" />
-        </div>
+        </Link>
       </div>
 
       {/* Konten Utama */}

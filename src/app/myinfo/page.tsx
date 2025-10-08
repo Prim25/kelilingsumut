@@ -101,6 +101,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1N1ymBlITghQt9fyuvEt9dK2a8Al6KL4s",
         bgColor: "bg-green-100",
+        linkGithub: "https://github.com/lundunababan",
       },
       {
         name: "Risky Anita Saragih",
@@ -150,7 +151,7 @@ const teamGroups: TeamGroup[] = [
     ],
   },
   {
-    title: "Tim Pemrogramman",
+    title: "Tim Pemrograman",
     members: [
       {
         name: "Anggiat Roberto Sinaga",
@@ -158,16 +159,15 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1OuWegEG_toVLH7rqRTMC0dR1YuCgOr0U",
         bgColor: "bg-blue-100",
-        linkGithub: "",
+        linkGithub: "https://github.com/anggiatsinaga",
       },
       {
         name: "Gres Audia Pasaribu",
         role: "Anggota",
         linkGithub: "https://github.com/gresaudiapasaribu",
         image:
-          "https://drive.google.com/uc?id=1m-MKo6bmViIoRgNNKjwr5e_fsXJdPeeW",
+          "https://drive.google.com/uc?id=17DrB-AbZv2wdw3Y5iF-az-3HSROg3b-j",
         bgColor: "bg-blue-100",
-        linkGithub: "",
       },
       {
         name: "Muhammad Akbar Raihansyah",
@@ -175,7 +175,7 @@ const teamGroups: TeamGroup[] = [
         image:
           "https://drive.google.com/uc?id=1431yCbTwU5dWmjkfyvIdgSr3BGBHrz8o",
         bgColor: "bg-blue-100",
-        linkGithub: "",
+        linkGithub: "https://github.com/akbar33949",
       },
     ],
   },
@@ -324,13 +324,13 @@ const TentangKamiPage: React.FC = () => {
       {/* Modal Zoom */}
       <AnimatePresence>
         {selectedMember && (
-          <motion.div
-            className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <a href={selectedMember.linkGithub}>
+          <a href={selectedMember.linkGithub}>
+            <motion.div
+              className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
               <motion.div
                 initial={{ scale: 0.7, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -354,8 +354,8 @@ const TentangKamiPage: React.FC = () => {
                 <h3 className="text-xl font-bold">{selectedMember.name}</h3>
                 <p className="text-gray-600">{selectedMember.role}</p>
               </motion.div>
-            </a>
-          </motion.div>
+            </motion.div>
+          </a>
         )}
       </AnimatePresence>
     </div>
