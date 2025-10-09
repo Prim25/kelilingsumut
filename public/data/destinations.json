@@ -1,18 +1,5 @@
 [
   {
-    "id": 1,
-    "kategori": "gunung",
-    "nama": "Gunung Sibuatan",
-    "gambarUtama": "https://drive.google.com/uc?id=1XM6lno8Wl2SQdBst6QnBXC9c2Maesah4",
-    "galeri": [
-      "https://drive.google.com/uc?id=1XM6lno8Wl2SQdBst6QnBXC9c2Maesah4",
-      "https://drive.google.com/uc?id=1glBem2PVUri1NqcGJfbwD5WCMkAtZg_7",
-      "https://drive.google.com/uc?id=1qlXk5MGcfxZxdtMleWW7Wgpy8Pq2LQIg"
-    ],
-    "deskripsiUtama": "Gunung Sibuatan adalah gunung tertinggi di Sumatera Utara dengan ketinggian sekitar 2.457 meter di atas permukaan laut. Gunung ini terletak di kawasan Kabupaten Karo dan Kabupaten Dairi, tidak jauh dari Danau Toba. ",
-    "deskripsi": "Gunung Sibuatan adalah gunung tertinggi di Sumatera Utara dengan ketinggian sekitar 2.457 meter di atas permukaan laut. Gunung ini terletak di kawasan Kabupaten Karo dan Kabupaten Dairi, tidak jauh dari Danau Toba. Dengan hutan tropis yang masih lebat dan keanekaragaman flora serta fauna, Sibuatan menjadi salah satu destinasi pendakian yang menantang sekaligus menarik. Suhu udara di puncak sangat sejuk bahkan bisa terasa dingin menusuk, menambah sensasi pendakian bagi para pecinta alam. Selain menawarkan panorama hutan yang hijau dan jalur pendakian yang menantang, Gunung Sibuatan juga memiliki nilai ekologis penting sebagai kawasan resapan air yang menunjang kehidupan masyarakat sekitar Danau Toba. Dari puncaknya, pendaki dapat menikmati pemandangan menakjubkan berupa hamparan pegunungan, hutan tropis, hingga keindahan Danau Toba dari kejauhan. Keindahan alam dan perannya bagi lingkungan menjadikan Gunung Sibuatan sebagai salah satu gunung istimewa di Sumatera Utara."
-  },
-  {
     "id": 21,
     "kategori": "museum",
     "nama": "Museum Perkebunan",
@@ -47,6 +34,19 @@
     ],
     "deskripsiUtama": "Gunung Lubuk Raya adalah gunung tertinggi di Kabupaten Tapanuli Selatan, Sumatera Utara, dengan ketinggian sekitar 1.862 meter di atas permukaan laut. ",
     "deskripsi": "Gunung Lubuk Raya adalah gunung tertinggi di Kabupaten Tapanuli Selatan, Sumatera Utara, dengan ketinggian sekitar 1.862 meter di atas permukaan laut. Gunung ini dikelilingi hutan tropis yang rimbun dan masih asri, menjadikannya rumah bagi berbagai jenis tumbuhan dan satwa khas Sumatra. Keindahan alamnya yang sejuk dan hijau membuat Gunung Lubuk Raya menjadi salah satu daya tarik wisata alam sekaligus sumber kehidupan masyarakat sekitar. Selain keindahan alam, Gunung Lubuk Raya juga memiliki nilai budaya dan spiritual bagi masyarakat Tapanuli Selatan. Jalur pendakiannya menantang dengan medan berbukit, tetapi menawarkan panorama menawan dari puncaknya, termasuk hamparan hutan luas dan pemukiman di sekitarnya. Gunung ini tidak hanya menjadi tujuan pendakian, tetapi juga berperan penting sebagai daerah tangkapan air yang menjaga keseimbangan ekosistem dan mendukung kebutuhan hidup warga di sekitarnya"
+  },
+  {
+    "id": 1,
+    "kategori": "gunung",
+    "nama": "Gunung Sibuatan",
+    "gambarUtama": "https://drive.google.com/uc?id=1XM6lno8Wl2SQdBst6QnBXC9c2Maesah4",
+    "galeri": [
+      "https://drive.google.com/uc?id=1XM6lno8Wl2SQdBst6QnBXC9c2Maesah4",
+      "https://drive.google.com/uc?id=1glBem2PVUri1NqcGJfbwD5WCMkAtZg_7",
+      "https://drive.google.com/uc?id=1qlXk5MGcfxZxdtMleWW7Wgpy8Pq2LQIg"
+    ],
+    "deskripsiUtama": "Gunung Sibuatan adalah gunung tertinggi di Sumatera Utara dengan ketinggian sekitar 2.457 meter di atas permukaan laut. Gunung ini terletak di kawasan Kabupaten Karo dan Kabupaten Dairi, tidak jauh dari Danau Toba. ",
+    "deskripsi": "Gunung Sibuatan adalah gunung tertinggi di Sumatera Utara dengan ketinggian sekitar 2.457 meter di atas permukaan laut. Gunung ini terletak di kawasan Kabupaten Karo dan Kabupaten Dairi, tidak jauh dari Danau Toba. Dengan hutan tropis yang masih lebat dan keanekaragaman flora serta fauna, Sibuatan menjadi salah satu destinasi pendakian yang menantang sekaligus menarik. Suhu udara di puncak sangat sejuk bahkan bisa terasa dingin menusuk, menambah sensasi pendakian bagi para pecinta alam. Selain menawarkan panorama hutan yang hijau dan jalur pendakian yang menantang, Gunung Sibuatan juga memiliki nilai ekologis penting sebagai kawasan resapan air yang menunjang kehidupan masyarakat sekitar Danau Toba. Dari puncaknya, pendaki dapat menikmati pemandangan menakjubkan berupa hamparan pegunungan, hutan tropis, hingga keindahan Danau Toba dari kejauhan. Keindahan alam dan perannya bagi lingkungan menjadikan Gunung Sibuatan sebagai salah satu gunung istimewa di Sumatera Utara."
   },
   {
     "id": 4,
@@ -350,7 +350,7 @@
   {
     "id": 31,
     "kategori": "gunung",
-    "nama": "Gunung usuk Buhit",
+    "nama": "Gunung Pusuk Buhit",
     "gambarUtama": "https://drive.google.com/uc?id=1LiOpt0D2EhpLAriKk9o8Gg87oIuUrfx0",
     "galeri": [
       "https://drive.google.com/uc?id=1C_5lc_5d1GDumsMEsSXJ7_qB_Fjh8sL6",
@@ -371,5 +371,90 @@
     ],
     "deskripsiUtama": "Air Terjun Sikulikap adalah destinasi alam yang menawan di Kabupaten Karo, Sumatera Utara. Air terjun ini memiliki ketinggian sekitar 30 meter dengan aliran air yang jernih dan deras, jatuh di tengah rimbunnya pepohonan hutan tropis. ",
     "deskripsi": " Air Terjun Sikulikap adalah destinasi alam yang menawan di Kabupaten Karo, Sumatera Utara. Air terjun ini memiliki ketinggian sekitar 30 meter dengan aliran air yang jernih dan deras, jatuh di tengah rimbunnya pepohonan hutan tropis. Suasana sejuk khas dataran tinggi Berastagi menambah daya tarik tersendiri, membuat pengunjung betah berlama-lama menikmati keindahan alam yang masih asri dan alami.Selain pemandangannya yang indah, kawasan Air Terjun Sikulikap juga sering menjadi titik awal bagi para pencinta alam yang ingin mendaki Gunung Sibayak. Kejernihan air, gemuruh yang menenangkan, serta kesejukan udara pegunungan menjadikan tempat ini cocok untuk bersantai, berfoto, atau sekadar melepas penat. Kombinasi panorama air terjun dan hutan yang hijau membuat Sikulikap menjadi salah satu destinasi wisata alam unggulan di Tanah Karo."
+  },
+  {
+    "id": 33,
+    "kategori": "Gunung",
+    "nama": "Gunung Sorik Merapi ",
+    "gambarUtama": "https://drive.google.com/uc?id=1Y-nJScfjbYBYOHaRE339ZXbGJ4Dskul8",
+    "galeri": [
+      "https://drive.google.com/uc?id=1zukC_21iHuGD2xQTe-03FBsi1X4CnXn3",
+      "https://drive.google.com/uc?id=1pPTN6eaSWLhxRt_g3gotMXBiKJBF3pyC",
+      "https://drive.google.com/uc?id=1KHCPcJZOVjyFK_o94x6RaN4WSA-Rp5g5"
+    ],
+    "deskripsiUtama": "Gunung Sorik Merapi adalah gunung berapi aktif yang terletak di Kabupaten Mandailing Natal, Sumatera Utara, dengan ketinggian sekitar 2.145 meter di atas permukaan laut.",
+    "deskripsi": "Gunung Sorik Merapi adalah gunung berapi aktif yang terletak di Kabupaten Mandailing Natal, Sumatera Utara, dengan ketinggian sekitar 2.145 meter di atas permukaan laut. Gunung ini dikelilingi hutan tropis yang asri dan memiliki panorama alam indah dengan udara sejuk khas pegunungan. Selain itu, Sorik Merapi juga dikenal memiliki danau kawah yang memikat, menambah daya tariknya sebagai destinasi wisata alam dan pendakian bagi pecinta petualangan. Selain keindahan alamnya, Gunung Sorik Merapi juga memiliki potensi energi panas bumi yang besar. Kawasan ini sedang dikembangkan sebagai sumber energi terbarukan yang bermanfaat bagi masyarakat. Meski demikian, aktivitas vulkanik Sorik Merapi masih perlu diwaspadai karena pernah mengalami erupsi di masa lalu. Perpaduan antara keindahan alam, nilai ekologis, dan potensi energi menjadikan Gunung Sorik Merapi sebagai salah satu gunung penting di Sumatera Utara."
+  },
+  {
+    "id": 34,
+    "kategori": "gunung",
+    "nama": "Gunung Sibayak",
+    "gambarUtama": "https://drive.google.com/uc?id=1hRMoQK2HjdIQxvAtem8GpasdKcTwsRl8",
+    "galeri": [
+      "https://drive.google.com/uc?id=1Hzk6j79B89S2Mqsc7YtSLAqKdmxe5KI5",
+      "https://drive.google.com/uc?id=14brkUQqJheBMPAVhfNeQWCA3v1XL7k1q"
+    ],
+    "deskripsiUtama": "Gunung Sibayak adalah gunung berapi aktif yang terletak di Kabupaten Karo, Sumatera Utara, dengan ketinggian sekitar 2.094 meter di atas permukaan laut.",
+    "deskripsi": "Gunung Sibayak adalah gunung berapi aktif yang terletak di Kabupaten Karo, Sumatera Utara, dengan ketinggian sekitar 2.094 meter di atas permukaan laut. Gunung ini dikenal sebagai salah satu gunung favorit para pendaki karena jalurnya relatif mudah dibandingkan gunung lain di Sumatera. Di sepanjang perjalanan, pendaki dapat menikmati pemandangan hutan tropis, udara sejuk, serta panorama Kota Berastagi yang indah. Selain keindahan alamnya, Gunung Sibayak juga terkenal dengan aktivitas geotermalnya. Di sekitar kawah, terdapat sumber uap panas bumi dan belerang yang masih aktif, memberikan suasana khas gunung berapi. Dari puncaknya, pendaki bisa menyaksikan pemandangan spektakuler, termasuk Gunung Sinabung dan hamparan hijau Tanah Karo. Gunung Sibayak pun sering dikaitkan dengan nilai sejarah dan budaya masyarakat sekitar, menjadikannya destinasi wisata alam dan pendakian yang populer di Sumatera Utara."
+  },
+  {
+    "id": 35,
+    "kategori": "gunung",
+    "nama": "Gunung Sinabung",
+    "gambarUtama": "https://drive.google.com/uc?id=1MD1Gyty-S7VUpaiPCMJwujkw31q5qnfi",
+    "galeri": [
+      "https://drive.google.com/uc?id=1u8oaizIjiMytqfS9j_Ar3cZOIhdOs58P",
+      "https://drive.google.com/uc?id=1VLE4QCaIfdAn_cS61cZ8tukPdZlZEkak"
+    ],
+    "deskripsiUtama": "Gunung Sinabung adalah gunung berapi aktif yang terletak di Kabupaten Karo, Sumatera Utara, dengan ketinggian sekitar 2.460 meter di atas permukaan laut.",
+    "deskripsi": "Gunung Sinabung adalah gunung berapi aktif yang terletak di Kabupaten Karo, Sumatera Utara, dengan ketinggian sekitar 2.460 meter di atas permukaan laut. Gunung ini merupakan bagian dari Bukit Barisan dan dikelilingi pemandangan alam yang indah serta udara sejuk khas pegunungan. Sebelum kembali erupsi pada tahun 2010 setelah ratusan tahun tertidur, Sinabung dikenal sebagai salah satu destinasi pendakian yang menarik dengan jalur hutan tropis yang rimbun dan panorama spektakuler dari puncaknya. Namun, sejak letusan besarnya, Gunung Sinabung menjadi salah satu gunung teraktif di Indonesia dengan aktivitas vulkanik yang cukup tinggi. Erupsi demi erupsi tidak hanya mengubah bentuk kawah dan lanskap sekitarnya, tetapi juga berdampak besar pada kehidupan masyarakat Karo, termasuk relokasi penduduk dari daerah rawan bencana. Meski demikian, Gunung Sinabung tetap memiliki pesona alam yang khas dan menjadi simbol kekuatan alam di Tanah Karo."
+  },
+  {
+    "id": 36,
+    "kategori": "danau",
+    "nama": "Danau Sidihoni",
+    "gambarUtama": "https://drive.google.com/uc?id=1libXP2lXVY3Byvh-lo8EAcXA8WwxFr1D",
+    "galeri": [
+      "https://drive.google.com/uc?id=1uMQJXmoB05DowJ-oiLXPwFNmwmURtkI_",
+      "https://drive.google.com/uc?id=1Shd6x1S5WU5MF0qpX7ZYe6sOANuBr6Pc"
+    ],
+    "deskripsiUtama": " Danau Sidihoni adalah salah satu danau unik yang terletak di Pulau Samosir, Sumatera Utara. ",
+    "deskripsi": "Danau Sidihoni adalah salah satu danau unik yang terletak di Pulau Samosir, Sumatera Utara. Keunikan danau ini sering disebut sebagai “danau di atas danau” karena berada di Pulau Samosir yang sendiri terletak di tengah Danau Toba. Suasana di sekitar Danau Sidihoni masih sangat alami, dikelilingi perbukitan hijau dan hamparan padang rumput yang luas. Keindahannya membuat danau ini menjadi destinasi menarik bagi wisatawan yang ingin merasakan pesona alam yang tenang dan asri. Selain keindahan pemandangannya, Danau Sidihoni juga memiliki nilai budaya dan historis bagi masyarakat setempat. Kawasan di sekitar danau kerap dimanfaatkan untuk kegiatan sehari-hari, sekaligus menjadi bagian dari kehidupan masyarakat Batak di Samosir. Suasananya yang sejuk dan panorama alam yang khas menjadikan Danau Sidihoni sebagai tempat yang cocok untuk bersantai, berfoto, maupun sekadar menikmati ketenangan jauh dari hiruk pikuk perkotaan."
+  },
+  {
+    "id": 37,
+    "kategori": "danau",
+    "nama": "Danau Siombak",
+    "gambarUtama": "https://drive.google.com/uc?id=1EWmst6nJ1LDuP1ZW7LclYvA636JG9UwG",
+    "galeri": [
+      "https://drive.google.com/uc?id=1gPoa0lEFy7LEnfNp4SGwUNFjQm-JoSLY",
+      "https://drive.google.com/uc?id=17PzmSN4dim6kwvS5T9TeabhjJ4otQcYZ"
+    ],
+    "deskripsiUtama": " Danau Siombak adalah sebuah danau buatan yang terletak di Medan Marelan, Sumatera Utara.",
+    "deskripsi": "Danau Siombak adalah sebuah danau buatan yang terletak di Medan Marelan, Sumatera Utara. Danau ini terbentuk dari bekas galian tanah yang kemudian terisi air, sehingga menghadirkan panorama alam yang menarik dan menjadi destinasi wisata favorit masyarakat sekitar. Dengan luas sekitar 40 hektar, Danau Siombak dikelilingi pepohonan hijau serta udara yang sejuk, menciptakan suasana nyaman bagi pengunjung yang ingin bersantai. Selain keindahan alamnya, Danau Siombak juga menawarkan berbagai aktivitas menarik seperti memancing, berperahu, atau menikmati kuliner khas di warung-warung sekitar. Tempat ini sering dijadikan tujuan rekreasi keluarga karena suasananya yang tenang dan fasilitas yang cukup memadai. Pemandangan matahari terbenam di Danau Siombak pun menjadi momen yang indah, menjadikannya destinasi wisata yang memadukan keasrian alam dan hiburan sederhana bagi masyarakat Medan dan sekitarnya."
+  },
+  {
+    "id": 38,
+    "kategori": "danau",
+    "nama": "Danau Toba",
+    "gambarUtama": "https://drive.google.com/uc?id=1mZoeETjo-3AwbmRI_ldWUEEkhR8j3vlh",
+    "galeri": [
+      "https://drive.google.com/uc?id=1XJqWUl2dWklbM7ya4HXYtc3ehQR8emQl",
+      "https://drive.google.com/uc?id=1iDFcHrTNyiKUV91N_TbhGk3JZUhCC-dW"
+    ],
+    "deskripsiUtama": "Danau Toba adalah danau vulkanik terbesar di Indonesia sekaligus salah satu yang terbesar di dunia, terletak di Provinsi Sumatera Utara.",
+    "deskripsi": "Danau Toba adalah danau vulkanik terbesar di Indonesia sekaligus salah satu yang terbesar di dunia, terletak di Provinsi Sumatera Utara. Danau ini terbentuk akibat letusan gunung berapi super sekitar 74.000 tahun yang lalu, meninggalkan kaldera raksasa yang kini dipenuhi air dan membentuk panorama menakjubkan. Di tengah Danau Toba terdapat Pulau Samosir, sebuah pulau besar yang memiliki daya tarik budaya dan keindahan alam tersendiri, menjadikannya tujuan wisata favorit bagi wisatawan domestik maupun mancanegara. Selain keindahan alamnya yang luar biasa, Danau Toba juga kaya akan budaya dan tradisi masyarakat Batak yang mendiami kawasan sekitarnya. Wisatawan dapat menikmati perpaduan antara pemandangan danau yang luas, pegunungan hijau yang mengelilinginya, serta keramahan penduduk lokal dengan adat dan seni khas Batak. Suasana sejuk, tenang, dan eksotis membuat Danau Toba bukan hanya sekadar destinasi wisata, tetapi juga tempat yang sarat akan sejarah, legenda, dan kekayaan budaya Nusantara."
+  },
+  {
+    "id": 39,
+    "kategori": "danau",
+    "nama": "Danau Sidihoni",
+    "gambarUtama": "https://drive.google.com/uc?id=1z4zDRdZRHdC7dUxj7w5hsgLOYvLXWJfK",
+    "galeri": [
+      "https://drive.google.com/uc?id=1A48tN8CxvAnGUfx-IhirrLWWh_sCy4-N",
+      "https://drive.google.com/uc?id=1AvdarDQd5ac7hD23qbW5lY7fO3AOK_yU"
+    ],
+    "deskripsiUtama": "Danau Lau Kawar adalah danau alami yang terletak di kaki Gunung Sinabung, Kabupaten Karo, Sumatera Utara.",
+    "deskripsi": "Danau Lau Kawar adalah danau alami yang terletak di kaki Gunung Sinabung, Kabupaten Karo, Sumatera Utara. Danau ini menyuguhkan panorama indah dengan airnya yang jernih serta dikelilingi oleh hutan hijau dan perbukitan yang menenangkan. Suasana sejuk khas pegunungan berpadu dengan keheningan alam membuat Danau Lau Kawar menjadi tempat yang ideal untuk melepas penat, menikmati keindahan alam, atau sekadar beristirahat sambil menghirup udara segar. Selain keindahan alamnya, Danau Lau Kawar juga sering dijadikan lokasi untuk berkemah dan menikmati suasana malam yang damai di bawah langit berbintang. Pemandangan Gunung Sinabung yang menjulang megah di dekat danau menambah daya tarik tersendiri, memberikan pengalaman wisata yang unik bagi para pengunjung. Tempat ini menjadi pilihan tepat bagi pencinta alam dan siapa saja yang ingin merasakan ketenangan sekaligus pesona alam pegunungan yang masih asri."
   }
 ]

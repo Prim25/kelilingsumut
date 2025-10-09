@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -55,7 +54,9 @@ export default function ArtikelDetail({ params }: ArtikelDetailProps) {
             }}
           />
         </div>
-        <p className="text-xl font-bold text-blue-700 animate-pulse">Memuat...</p>
+        <p className="text-xl font-bold text-blue-700 animate-pulse">
+          Memuat...
+        </p>
       </div>
     );
   }

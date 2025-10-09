@@ -73,22 +73,6 @@ const Hero = () => {
           <FaArrowRight className="text-white" />
         </Link>
       </div>
-      <div className="absolute right-96 bottom-5">
-        <Image
-          src="/images/Vector1.png"
-          width={160}
-          height={160}
-          alt=""
-          className="object-cover w-full h-full rotate-180 "
-        />
-        <Image
-          src="/images/Vector2.png"
-          width={80}
-          height={80}
-          alt=""
-          className="object-cover -right-10 w-14 h-14 absolute bottom-35"
-        />
-      </div>
     </section>
   );
 };

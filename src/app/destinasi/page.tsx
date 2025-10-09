@@ -68,7 +68,7 @@ export default function DestinationsList() {
           informasi lebih detail
         </p>
         <div className="flex items-center gap-5 justify-end mt-10 w-full">
-          <div className="py-2 px-5 items-center border border-gray-800 flex rounded-full w-1/2">
+          <div className="py-2 px-5 items-center border border-gray-800 flex rounded-full w-full md:w-1/2 justify-between">
             <input
               type="text"
               name=""
