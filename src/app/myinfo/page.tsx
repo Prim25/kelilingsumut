@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
@@ -9,6 +9,7 @@ interface TeamMember {
   role: string;
   image: string;
   bgColor?: string;
+  linkGithub?: string;
 }
 
 interface TeamGroup {
@@ -22,6 +23,7 @@ const projectManager: TeamMember = {
   role: "Project Manager",
   image: "https://drive.google.com/uc?id=1nhoE2w1sFzSGD6ZzeBTLBcjif-WmwyoY",
   bgColor: "bg-white",
+  linkGithub: "",
 };
 
 // Kelompok tim
@@ -180,8 +182,50 @@ const teamGroups: TeamGroup[] = [
     ],
   },
 ];
+
 const TentangKamiPage: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="fixed inset-0 flex flex-col items-center justify-center bg-white z-[9999]">
+        <div className="flex items-center mb-4 space-x-2">
+          <motion.span
+            className="w-4 h-4 bg-blue-500 rounded-full"
+            animate={{ y: [0, -18, 0] }}
+            transition={{ repeat: Infinity, duration: 0.6, ease: "easeInOut" }}
+          />
+          <motion.span
+            className="w-4 h-4 bg-yellow-400 rounded-full"
+            animate={{ y: [0, -18, 0] }}
+            transition={{
+              repeat: Infinity,
+              duration: 0.6,
+              ease: "easeInOut",
+              delay: 0.2,
+            }}
+          />
+          <motion.span
+            className="w-4 h-4 bg-orange-400 rounded-full"
+            animate={{ y: [0, -18, 0] }}
+            transition={{
+              repeat: Infinity,
+              duration: 0.6,
+              ease: "easeInOut",
+              delay: 0.4,
+            }}
+          />
+        </div>
+        <p className="text-xl font-bold text-blue-700 animate-pulse">Memuat...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-gray-100 font-display">
@@ -324,38 +368,46 @@ const TentangKamiPage: React.FC = () => {
       {/* Modal Zoom */}
       <AnimatePresence>
         {selectedMember && (
-          <a href={selectedMember.linkGithub}>
+          <motion.div
+            className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
             <motion.div
-              className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
+              initial={{ scale: 0.7, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.7, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 200 }}
+              className="relative bg-white p-6 rounded-xl shadow-2xl max-w-md w-full text-center"
             >
-              <motion.div
-                initial={{ scale: 0.7, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.7, opacity: 0 }}
-                transition={{ type: "spring", stiffness: 200 }}
-                className="relative bg-white p-6 rounded-xl shadow-2xl max-w-md w-full text-center"
+              <button
+                onClick={() => setSelectedMember(null)}
+                className="absolute top-2 right-2 text-gray-600 hover:text-black text-xl"
               >
-                <button
-                  onClick={() => setSelectedMember(null)}
-                  className="absolute top-2 right-2 text-gray-600 hover:text-black text-xl"
+                ✕
+              </button>
+              <Image
+                src={selectedMember.image}
+                alt={selectedMember.name}
+                width={250}
+                height={250}
+                className="rounded-full border-4 border-gray-200 shadow-md mx-auto mb-4 object-cover"
+              />
+              <h3 className="text-xl font-bold">{selectedMember.name}</h3>
+              <p className="text-gray-600">{selectedMember.role}</p>
+              {selectedMember.linkGithub && selectedMember.linkGithub !== "" && (
+                <a
+                  href={selectedMember.linkGithub}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
                 >
-                  ✕
-                </button>
-                <Image
-                  src={selectedMember.image}
-                  alt={selectedMember.name}
-                  width={250}
-                  height={250}
-                  className="rounded-full border-4 border-gray-200 shadow-md mx-auto mb-4 object-cover"
-                />
-                <h3 className="text-xl font-bold">{selectedMember.name}</h3>
-                <p className="text-gray-600">{selectedMember.role}</p>
-              </motion.div>
+                  Lihat Github
+                </a>
+              )}
             </motion.div>
-          </a>
+          </motion.div>
         )}
       </AnimatePresence>
     </div>

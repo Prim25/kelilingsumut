@@ -28,6 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        {/* Tag head lain jika ada */}
+      </head>
       <body className={`${fontbri.variable} ${fontMono.variable} antialiased`}>
         <DestinationProvider>
           <ArticleProvider>

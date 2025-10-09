@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useArticles } from "@/context/ArticleContext";
@@ -7,14 +8,57 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { IoIosShareAlt } from "react-icons/io";
+import { motion } from "framer-motion";
 
 interface ArtikelDetailProps {
   params: { artikelId: string };
 }
 
 export default function ArtikelDetail({ params }: ArtikelDetailProps) {
-  const { artikelId } = params 
+  const { artikelId } = params;
   const { getArticleById, articles } = useArticles();
+
+  // Loading screen logic
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="fixed inset-0 flex flex-col items-center justify-center bg-white z-[9999]">
+        <div className="flex items-center mb-4 space-x-2">
+          <motion.span
+            className="w-4 h-4 bg-blue-500 rounded-full"
+            animate={{ y: [0, -18, 0] }}
+            transition={{ repeat: Infinity, duration: 0.6, ease: "easeInOut" }}
+          />
+          <motion.span
+            className="w-4 h-4 bg-yellow-400 rounded-full"
+            animate={{ y: [0, -18, 0] }}
+            transition={{
+              repeat: Infinity,
+              duration: 0.6,
+              ease: "easeInOut",
+              delay: 0.2,
+            }}
+          />
+          <motion.span
+            className="w-4 h-4 bg-orange-400 rounded-full"
+            animate={{ y: [0, -18, 0] }}
+            transition={{
+              repeat: Infinity,
+              duration: 0.6,
+              ease: "easeInOut",
+              delay: 0.4,
+            }}
+          />
+        </div>
+        <p className="text-xl font-bold text-blue-700 animate-pulse">Memuat...</p>
+      </div>
+    );
+  }
 
   const article = getArticleById(artikelId);
   if (!article) {
@@ -103,7 +147,7 @@ export default function ArtikelDetail({ params }: ArtikelDetailProps) {
                   </h3>
                   <p className="text-xs text-gray-500">{item.date}</p>
                 </div>
-              </Link>         
+              </Link>
             ))}
         </aside>
       </div>

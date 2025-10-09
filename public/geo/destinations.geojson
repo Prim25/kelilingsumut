@@ -1,0 +1,46 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "type": "Feature",
+            "properties": {
+                "id": 1,
+                "nama": "Medan",
+                "kategori": "Kota",
+                "deskripsiUtama": "Ibukota Sumatera Utara.",
+                "gambarUtama": "https://drive.google.com/uc?export=view&id=1XM6lno8Wl2SQdBst6QnBXC9c2Maesah4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [98.6722, 3.5952]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "nama": "Doloksanggul",
+                "kategori": "Kota",
+                "deskripsiUtama": "Kota di Kabupaten Humbang Hasundutan.",
+                "gambarUtama": "https://drive.google.com/uc?export=view&id=1BYhOwwUAil_hSNauFUNVHv3_RBFXMEYz"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [98.4931, 2.1361]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 3,
+                "nama": "Tebing Tinggi",
+                "kategori": "Kota",
+                "deskripsiUtama": "Kota di Sumatera Utara.",
+                "gambarUtama": "https://drive.google.com/uc?export=view&id=1G98h9hR4svGw6oHw6MBj7VX7oajHON2t"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [99.1636, 3.3244]
+            }
+        }
+    ]
+}

@@ -1,12 +1,13 @@
 "use client";
-import React, {useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useArticles } from "@/context/ArticleContext";
+import { motion } from "framer-motion";
 
 const ArtikelPage = () => {
-  const {articles} = useArticles()
+  const { articles } = useArticles();
 
   const events = [
     {
@@ -28,7 +29,7 @@ const ArtikelPage = () => {
       image: "/images/event4.webp",
       title: "Maniamolo Fest 2025",
       date: "23 Nov 2025- 26 Nov 2025",
-    }, 
+    },
     {
       image: "/images/event3.webp",
       title: "Aquabike jetsky world championship 2025",
@@ -37,7 +38,7 @@ const ArtikelPage = () => {
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [isLeftActive, setIsLeftActive] = useState(true); // default kiri aktif
+  const [isLeftActive, setIsLeftActive] = useState(true);
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
@@ -49,15 +50,57 @@ const ArtikelPage = () => {
 
       scrollRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" });
     }
-
-    // update state sesuai arah
     setIsLeftActive(direction === "left");
   };
 
+  // Loading screen logic
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="fixed inset-0 flex flex-col items-center justify-center bg-white z-[9999]">
+        <div className="flex items-center mb-4 space-x-2">
+          <motion.span
+            className="w-4 h-4 bg-blue-500 rounded-full"
+            animate={{ y: [0, -18, 0] }}
+            transition={{ repeat: Infinity, duration: 0.6, ease: "easeInOut" }}
+          />
+          <motion.span
+            className="w-4 h-4 bg-yellow-400 rounded-full"
+            animate={{ y: [0, -18, 0] }}
+            transition={{
+              repeat: Infinity,
+              duration: 0.6,
+              ease: "easeInOut",
+              delay: 0.2,
+            }}
+          />
+          <motion.span
+            className="w-4 h-4 bg-orange-400 rounded-full"
+            animate={{ y: [0, -18, 0] }}
+            transition={{
+              repeat: Infinity,
+              duration: 0.6,
+              ease: "easeInOut",
+              delay: 0.4,
+            }}
+          />
+        </div>
+        <p className="text-xl font-bold text-blue-700 animate-pulse">Memuat...</p>
+      </div>
+    );
+  }
+
   return (
     <div className="mb-16 font-display">
-      <div className="bg-[#EEF5FF] py-10 px-mob md:px-desk"> 
-        <h1 className="text-3xl font-bold mb-10 text-center font-heading ">Event Terbaru</h1>
+      <div className="bg-[#EEF5FF] py-10 px-mob md:px-desk">
+        <h1 className="text-3xl font-bold mb-10 text-center font-heading ">
+          Event Terbaru
+        </h1>
         <div
           ref={scrollRef}
           className="flex overflow-x-auto scrollbar-hide scroll-smooth gap-5"
