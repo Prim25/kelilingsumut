@@ -9,6 +9,7 @@
 @theme {
   --color-primary: #1f4cad;
   --spacing-desk: 6rem;
+  --spacing-mob: 3rem;
   /* custom fonts */
   --font-heading: "Poppins", sans-serif;
   --font-display: "Open Sans ", sans-serif;

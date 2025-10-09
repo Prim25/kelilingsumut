@@ -9,13 +9,13 @@ const Footer: React.FC = () => {
     <footer className="bg-blue-800 text-white py-8 px-6 md:px-desk">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
         {/* Logo + Deskripsi */}
-        <div className="flex items-start space-x-4">
+        <div className="flex md:items-start items-center space-x-4">
           <Image
-            src="https://drive.google.com/uc?export=view&id=1LVOBQ1LiUNzB05REzPPW2l5TisKz0_fd" // ganti dengan path logo
+            src="https://drive.google.com/uc?export=view&id=1LVOBQ1LiUNzB05REzPPW2l5TisKz0_fd"
             alt="Keliling Sumut"
             width={80}
             height={80}
-            className="rounded-full"
+            className="rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-20 md:h-20 object-cover"
           />
           <p className="text-sm leading-relaxed">
             Keliling Sumut adalah website wisata yang menawarkan panduan lengkap

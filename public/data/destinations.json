@@ -30,7 +30,6 @@
     "nama": "Siantar Zoo",
     "gambarUtama": "https://drive.google.com/uc?id=1HNS7v7Yi7jmPx3fkh6FYo7Snie2t4Jx4",
     "galeri": [
-      "https://drive.google.com/uc?id=1KEkL3rZQAynLKh7dUOn8y6J8yCzNf8QL",
       "https://drive.google.com/uc?id=1KEkL3rZQAynLKh7dUOn8y6J8yCzNf8QL"
     ],
     "deskripsiUtama": "Siantar Zoo, atau dikenal juga sebagai Kebun Binatang Pematang Siantar, merupakan salah satu kebun binatang tertua di Sumatera Utara.",
@@ -53,10 +52,9 @@
     "id": 4,
     "kategori": "air terjun",
     "nama": "Sipiso - piso",
-    "gambarUtama": "https://drive.google.com/uc?id=1GybioJZdodevoxc1ds1CyxjIAjSE5XCb",
+    "gambarUtama": "https://drive.google.com/uc?id=1YMYMTmvkwT0QfNQZHqu2KfqYFrkhNu6h",
     "galeri": [
       "https://drive.google.com/uc?id=1IiuAE7HArcFThUsLrGd5eZg1MvZa2ibb",
-      "https://drive.google.com/uc?id=1XPdKhdaSYM6m7VXdT9CDeOBXLCAWzl3l",
       "https://drive.google.com/uc?id=1YMYMTmvkwT0QfNQZHqu2KfqYFrkhNu6h",
       "https://drive.google.com/uc?id=1eqUM4E7K4tTcVkStOEz9SWU-OEmrPjHj"
     ],
@@ -114,9 +112,8 @@
     "id": 9,
     "kategori": "air terjun",
     "nama": "Simatutung",
-    "gambarUtama": "https://drive.google.com/uc?id=1GybioJZdodevoxc1ds1CyxjIAjSE5XCb",
+    "gambarUtama": "https://drive.google.com/uc?id=11nSkon2FSmY7VD2wHAIHpkrBVlDGAVu8",
     "galeri": [
-      "https://drive.google.com/uc?id=11nSkon2FSmY7VD2wHAIHpkrBVlDGAVu8",
       "https://drive.google.com/uc?id=1XPdKhdaSYM6m7VXdT9CDeOBXLCAWzl3l",
       "https://drive.google.com/uc?id=1akSffH7f63cMUOLIwn8YC7Wp48viBECh",
       "https://drive.google.com/uc?id=1eqUM4E7K4tTcVkStOEz9SWU-OEmrPjHj"
@@ -297,7 +294,7 @@
       "https://drive.google.com/uc?id=12nHBsRyj5BmAoyDQ8S25Nb9TtD4Yq2wU",
       "https://drive.google.com/uc?id=1FTG_iuP_nwSjctt3c597mQRA_6Jczy6k"
     ],
-    "deskripsiUtama": "Penangkaran buaya adalah tempat khusus yang dibangun untuk melestarikan populasi buaya sekaligus menjadi sarana penelitian, pendidikan, dan wisata. Di Sumatera Utara, penangkaran buaya menjadi salah satu daya tarik wisata karena pengunjung dapat melihat langsung kehidupan reptil besar ini dalam habitat buatan yang menyerupai alam aslinya. ",
+    "deskripsiUtama": "Penangkaran buaya adalah tempat khusus yang dibangun untuk melestarikan populasi buaya sekaligus menjadi sarana penelitian, pendidikan, dan wisata.",
     "deskripsi": "Penangkaran buaya adalah tempat khusus yang dibangun untuk melestarikan populasi buaya sekaligus menjadi sarana penelitian, pendidikan, dan wisata. Di Sumatera Utara, penangkaran buaya menjadi salah satu daya tarik wisata karena pengunjung dapat melihat langsung kehidupan reptil besar ini dalam habitat buatan yang menyerupai alam aslinya. Selain berfungsi melestarikan spesies buaya agar tidak punah, penangkaran juga menjadi pusat edukasi bagi masyarakat mengenai peran penting buaya dalam ekosistem dan upaya menjaga keseimbangan lingkungan.Selain itu, penangkaran buaya sering dilengkapi dengan area rekreasi yang ramah pengunjung. Wisatawan tidak hanya bisa menyaksikan buaya dari jarak aman, tetapi juga mendapatkan informasi mengenai siklus hidup buaya, cara berkembang biak, hingga pemanfaatannya secara tradisional di beberapa daerah. Dengan demikian, penangkaran buaya tidak hanya menjadi destinasi wisata menarik, tetapi juga sarana edukatif yang menumbuhkan kesadaran masyarakat tentang pentingnya menjaga satwa liar dan kelestarian alam."
   },
   {
@@ -310,29 +307,27 @@
       "https://drive.google.com/uc?id=1gw6551sdIos7bC1vH_luJSpWF6NRejtw",
       "https://drive.google.com/uc?id=11KoJ3VKSEognVkHDmq7j4cMQ4x-1lHZig"
     ],
-    "deskripsiUtama": "Aek Sijorni adalah sebuah objek wisata pemandian air panas alami yang terletak di Padangsidimpuan, Sumatera Utara. Tempat ini terkenal dengan kejernihan airnya serta suasana yang masih asri dan menenangkan. Air panas yang mengalir di kawasan ini dipercaya memiliki khasiat bagi kesehatan, terutama untuk merilekskan tubuh dan melancarkan peredaran darah.",
+    "deskripsiUtama": "Aek Sijorni adalah sebuah objek wisata pemandian air panas alami yang terletak di Padangsidimpuan, Sumatera Utara. Tempat ini terkenal dengan kejernihan airnya serta suasana yang masih asri dan menenangkan.",
     "deskripsi": "Aek Sijorni adalah sebuah objek wisata pemandian air panas alami yang terletak di Padangsidimpuan, Sumatera Utara. Tempat ini terkenal dengan kejernihan airnya serta suasana yang masih asri dan menenangkan. Air panas yang mengalir di kawasan ini dipercaya memiliki khasiat bagi kesehatan, terutama untuk merilekskan tubuh dan melancarkan peredaran darah. Lingkungannya yang hijau dengan pepohonan di sekitarnya membuat pengunjung bisa menikmati suasana alam yang sejuk dan segar meskipun berada di area pemandian air panas. Selain pemandian utama, kawasan Eak Sijorni juga dilengkapi dengan aliran sungai yang jernih serta panorama alam yang indah sehingga menambah daya tarik bagi wisatawan. Banyak pengunjung yang datang tidak hanya untuk berendam, tetapi juga untuk berfoto, menikmati keindahan sekitar, dan bersantai bersama keluarga. Suasana yang tenang menjadikan tempat ini cocok sebagai destinasi wisata alam bagi siapa saja yang ingin melepas penat dari kesibukan sehari-hari."
   },
   {
     "id": 28,
     "kategori": "air terjun",
     "nama": "Air Terjun Pelangi Indah",
-    "gambarUtama": "https://drive.google.com/uc?id=1GybioJZdodevoxc1ds1CyxjIAjSE5XCb",
+    "gambarUtama": "https://drive.google.com/uc?id=1_HVQLccKRRBczQvjK2OrK4E-ZcdklAsz",
     "galeri": [
       "https://drive.google.com/uc?id=1mDF2-qZrCi_0oORRb7J4IWUOa0d14kb0",
-      "https://drive.google.com/uc?id=1fDKZtKEcsevHbpf8bf48vUhKOGGKH3Zz",
-      "https://drive.google.com/uc?id=1_HVQLccKRRBczQvjK2OrK4E-ZcdklAsz"
+      "https://drive.google.com/uc?id=1fDKZtKEcsevHbpf8bf48vUhKOGGKH3Zz"
     ],
-    "deskripsiUtama": "Air Terjun Pelangi Indah merupakan destinasi wisata alam yang memukau dengan keindahan aliran airnya yang jatuh dari tebing tinggi di tengah hutan hijau. Nama “Pelangi Indah” berasal dari fenomena unik yang terjadi ketika sinar matahari mengenai percikan air, sehingga memunculkan bias cahaya menyerupai pelangi di sekitar air terjun.",
+    "deskripsiUtama": "Air Terjun Pelangi Indah merupakan destinasi wisata alam yang memukau dengan keindahan aliran airnya yang jatuh dari tebing tinggi di tengah hutan hijau.",
     "deskripsi": " Air Terjun Pelangi Indah merupakan destinasi wisata alam yang memukau dengan keindahan aliran airnya yang jatuh dari tebing tinggi di tengah hutan hijau. Nama “Pelangi Indah” berasal dari fenomena unik yang terjadi ketika sinar matahari mengenai percikan air, sehingga memunculkan bias cahaya menyerupai pelangi di sekitar air terjun. Suasana alami yang masih terjaga membuat pengunjung bisa merasakan ketenangan sekaligus pesona alam yang memanjakan mata.Selain panorama air terjun yang menawan, kawasan ini juga menawarkan udara sejuk dan suasana yang asri, cocok untuk melepas penat dari rutinitas sehari-hari. Air yang jernih dan dingin membuat banyak wisatawan betah bermain air atau sekadar merendam kaki di kolam alami di bawahnya. Dengan perpaduan panorama hijau, gemuruh air terjun, dan pelangi yang indah, tempat ini menjadi salah satu spot favorit untuk berfoto sekaligus menikmati pesona alam yang menenangkan jiwa."
   },
   {
     "id": 29,
     "kategori": "air terjun",
     "nama": "Efrata",
-    "gambarUtama": "https://drive.google.com/uc?id=1GybioJZdodevoxc1ds1CyxjIAjSE5XCb",
+    "gambarUtama": "https://drive.google.com/uc?id=1COhm8Euh5wA_bpwT-i2bqSMNGIj19PRI",
     "galeri": [
-      "https://drive.google.com/uc?id=1COhm8Euh5wA_bpwT-i2bqSMNGIj19PRI",
       "https://drive.google.com/uc?id=1kdxSV2MUKwNmlU69p3vl8EjfhdhFaFOc",
       "https://drive.google.com/uc?id=1CIy_nek0YQSnZX7Gq4vssqMhjfzsJfzD",
       "https://drive.google.com/uc?id=1iiLDGknSG0BdNPOecH-mVsXkrb3eWTda"
@@ -344,9 +339,8 @@
     "id": 30,
     "kategori": "air terjun",
     "nama": "Ponot",
-    "gambarUtama": "https://drive.google.com/uc?id=1GybioJZdodevoxc1ds1CyxjIAjSE5XCb",
+    "gambarUtama": "https://drive.google.com/uc?id=1RYltoAjXh3fHs_8wVzUWfonqLjEl-cVa",
     "galeri": [
-      "https://drive.google.com/uc?id=1RYltoAjXh3fHs_8wVzUWfonqLjEl-cVa",
       "https://drive.google.com/uc?id=16UW4msEaqYKOSvd82Xn70QVR7MozV_4B",
       "https://drive.google.com/uc?id=1xTxUzpe4bvxSc0onOxFafxwwGpsgwssK"
     ],
@@ -370,11 +364,10 @@
     "id": 32,
     "kategori": "air terjun",
     "nama": "Sikulikap",
-    "gambarUtama": "https://drive.google.com/uc?id=1GybioJZdodevoxc1ds1CyxjIAjSE5XCb",
+    "gambarUtama": "https://drive.google.com/uc?id=1P9WkwepbiEQF7Ey2jeJoBx7U_89_qqq8",
     "galeri": [
       "https://drive.google.com/uc?id=1o6MdwR54nA9T0BgFhTeUrjrQTXk8mCoS",
-      "https://drive.google.com/uc?id=1zik4x0ChNNzgZdU04ABLZWJibym32nXw",
-      "https://drive.google.com/uc?id=1P9WkwepbiEQF7Ey2jeJoBx7U_89_qqq8"
+      "https://drive.google.com/uc?id=1zik4x0ChNNzgZdU04ABLZWJibym32nXw"
     ],
     "deskripsiUtama": "Air Terjun Sikulikap adalah destinasi alam yang menawan di Kabupaten Karo, Sumatera Utara. Air terjun ini memiliki ketinggian sekitar 30 meter dengan aliran air yang jernih dan deras, jatuh di tengah rimbunnya pepohonan hutan tropis. ",
     "deskripsi": " Air Terjun Sikulikap adalah destinasi alam yang menawan di Kabupaten Karo, Sumatera Utara. Air terjun ini memiliki ketinggian sekitar 30 meter dengan aliran air yang jernih dan deras, jatuh di tengah rimbunnya pepohonan hutan tropis. Suasana sejuk khas dataran tinggi Berastagi menambah daya tarik tersendiri, membuat pengunjung betah berlama-lama menikmati keindahan alam yang masih asri dan alami.Selain pemandangannya yang indah, kawasan Air Terjun Sikulikap juga sering menjadi titik awal bagi para pencinta alam yang ingin mendaki Gunung Sibayak. Kejernihan air, gemuruh yang menenangkan, serta kesejukan udara pegunungan menjadikan tempat ini cocok untuk bersantai, berfoto, atau sekadar melepas penat. Kombinasi panorama air terjun dan hutan yang hijau membuat Sikulikap menjadi salah satu destinasi wisata alam unggulan di Tanah Karo."

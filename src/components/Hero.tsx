@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -21,10 +22,29 @@ const Hero = () => {
           Keliling berbagai tempat wisata di Sumatera Utara dengan mudah dan
           murah.
         </p>
-        <Link href={"/destinasi"} className="w-[350px] mt-6 border flex items-center justify-center  gap-3 border-white hover:bg-blue-700 hover:border-0 px-8 py-3 rounded-full font-semibold shadow-lg transition duration-300">
+        <Link
+          href={"/destinasi"}
+          className="w-[350px] mt-6 border flex items-center justify-center  gap-3 border-white hover:bg-blue-700 hover:border-0 px-8 py-3 rounded-full font-semibold shadow-lg transition duration-300"
+        >
           Temukan Destinasi Wisata
           <FaArrowRight className="text-white" />
         </Link>
+      </div>
+      <div className="absolute right-96 bottom-0">
+        <Image
+          src="/images/Vector1.png"
+          width={160}
+          height={160}
+          alt=""
+          className="object-cover w-full h-full "
+        />
+        <Image
+          src="/images/Vector2.png"
+          width={80}
+          height={80}
+          alt=""
+          className="object-cover -right-10 w-16 h-16 absolute bottom-30"
+        />
       </div>
     </section>
   );

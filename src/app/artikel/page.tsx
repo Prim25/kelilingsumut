@@ -29,6 +29,11 @@ const ArtikelPage = () => {
       title: "Maniamolo Fest 2025",
       date: "23 Nov 2025- 26 Nov 2025",
     }, 
+    {
+      image: "/images/event3.webp",
+      title: "Aquabike jetsky world championship 2025",
+      date: "03 Nov 2025- 05 Nov 2025",
+    },
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -51,8 +56,8 @@ const ArtikelPage = () => {
 
   return (
     <div className="mb-16 font-display">
-      <div className="bg-[#EEF5FF] py-10 md:px-desk">
-        <h1 className="text-3xl font-bold mb-10 text-center font-heading">Event Terbaru</h1>
+      <div className="bg-[#EEF5FF] py-10 px-mob md:px-desk"> 
+        <h1 className="text-3xl font-bold mb-10 text-center font-heading ">Event Terbaru</h1>
         <div
           ref={scrollRef}
           className="flex overflow-x-auto scrollbar-hide scroll-smooth gap-5"
@@ -100,7 +105,7 @@ const ArtikelPage = () => {
       </div>
 
       {/* Bagian Artikel */}
-      <div className="mt-10 md:px-desk">
+      <div className="mt-10 px-mob md:px-desk">
         <h1 className="font-bold text-3xl mb-10 font-heading">Artikel</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.map((a, i) => (

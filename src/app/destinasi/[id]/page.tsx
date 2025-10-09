@@ -4,6 +4,11 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useArticles } from "@/context/ArticleContext";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
+import { IoIosShareAlt } from "react-icons/io";
 
 type Destination = {
   id: number;
@@ -102,7 +107,20 @@ export default function DestinationDetailPage() {
             ))}
           </div>
         )}
-
+        <div className="flex items-center gap-3 mb-5">
+          <div className="bg-primary p-3 rounded-full text-white">
+            <FaInstagram className="text-[14px]" />
+          </div>
+          <div className="bg-primary p-3 rounded-full text-white">
+            <FaTiktok className="text-[14px]" />
+          </div>
+          <div className="bg-primary p-3 rounded-full text-white">
+            <RiTwitterXFill className="text-[14px]" />
+          </div>
+          <div className="bg-primary p-3 rounded-full text-white">
+            <IoIosShareAlt className="text-[14px]" />
+          </div>
+        </div>
         {/* DESKRIPSI */}
         <article className="prose prose-lg max-w-none text-justify leading-relaxed text-gray-700">
           {destination.deskripsi}
