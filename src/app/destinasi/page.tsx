@@ -8,6 +8,9 @@ import { IoFilterOutline } from "react-icons/io5";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
+import dynamic from "next/dynamic";
+const MapClient = dynamic(() => import("@/components/MapClient"), { ssr: false });
+
 export default function DestinationsList() {
   const { destinations } = useDestinations();
   const [selectedCategory, setSelectedCategory] = useState("semua");
@@ -83,8 +86,12 @@ export default function DestinationsList() {
         </div>
       </div>
       {/* =================================================================MAP================================================================ */}
-      <div>
-        <h1 className="text-8xl text-center ">MAP</h1>
+      <div className="mt-6">
+        <MapClient
+          selectedCategory={selectedCategory}
+          searchText={search}
+          // geojsonUrl="/geo/destinations.geojson" // (optional) if you used a different name/path
+        />
       </div>
       <h2 className="text-3xl font-bold text-center mb-8 mt-20">
         {category ? `Destinasi: ${category}` : "Daftar Destinasi"}
