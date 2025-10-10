@@ -10,19 +10,19 @@
     "deskripsiUtama": "Museum Perkebunan Indonesia adalah museum yang khusus menampilkan sejarah panjang perkembangan perkebunan di Indonesia, terutama di Sumatera Utara yang dikenal sebagai salah satu pusat perkebunan terbesar pada masa kolonial.",
     "deskripsi": "Museum Perkebunan Indonesia adalah museum yang khusus menampilkan sejarah panjang perkembangan perkebunan di Indonesia, terutama di Sumatera Utara yang dikenal sebagai salah satu pusat perkebunan terbesar pada masa kolonial. Koleksi museum ini mencakup peralatan perkebunan, arsip, dokumen, foto-foto lama, hingga replika dan benda bersejarah yang menggambarkan proses pengelolaan komoditas seperti karet, kelapa sawit, kopi, dan tembakau. Melalui koleksinya, pengunjung dapat memahami bagaimana perkebunan pernah menjadi tulang punggung perekonomian dan memiliki peran penting dalam dinamika sosial budaya masyarakat. Selain sebagai tempat pelestarian sejarah, Museum Perkebunan juga berfungsi sebagai sarana edukasi bagi pelajar, peneliti, maupun masyarakat umum. Museum ini menyajikan informasi mengenai perkembangan teknologi, sistem kerja, serta pengaruh perkebunan terhadap kehidupan sosial dan ekonomi bangsa. Dengan penyajian yang informatif dan menarik, museum ini menjadi destinasi wisata edukatif yang memperkaya wawasan tentang sejarah perkebunan sekaligus mengingatkan akan pentingnya sektor agrikultur dalam pembangunan Indonesia."
   },
-
   {
-    "id": 16,
-    "kategori": "kebun binatang",
-    "nama": "Siantar Zoo",
-    "gambarUtama": "https://drive.google.com/uc?id=1HNS7v7Yi7jmPx3fkh6FYo7Snie2t4Jx4",
+    "id": 38,
+    "kategori": "danau",
+    "nama": "Danau Toba",
+    "gambarUtama": "https://drive.google.com/uc?id=1mZoeETjo-3AwbmRI_ldWUEEkhR8j3vlh",
     "galeri": [
-      "https://drive.google.com/uc?id=1KEkL3rZQAynLKh7dUOn8y6J8yCzNf8QL"
+      "https://drive.google.com/uc?id=1XJqWUl2dWklbM7ya4HXYtc3ehQR8emQl",
+      "https://drive.google.com/uc?id=1iDFcHrTNyiKUV91N_TbhGk3JZUhCC-dW"
     ],
-    "deskripsiUtama": "Siantar Zoo, atau dikenal juga sebagai Kebun Binatang Pematang Siantar, merupakan salah satu kebun binatang tertua di Sumatera Utara.",
-    "deskripsi": "Siantar Zoo, atau dikenal juga sebagai Kebun Binatang Pematang Siantar, merupakan salah satu kebun binatang tertua di Sumatera Utara. Terletak di Kota Pematang Siantar, kebun binatang ini memiliki koleksi satwa yang cukup lengkap, baik satwa lokal maupun mancanegara. Suasana yang sejuk dan rindang membuat pengunjung betah berlama-lama, sekaligus memberikan pengalaman edukatif untuk mengenal berbagai jenis hewan dari dekat.Selain menghadirkan koleksi satwa, Siantar Zoo juga menjadi ruang rekreasi keluarga yang dilengkapi dengan area bermain dan fasilitas pendukung wisata. Kebun binatang ini memiliki peran penting dalam konservasi satwa langka serta sebagai sarana pendidikan lingkungan bagi masyarakat. Dengan perpaduan antara hiburan, edukasi, dan konservasi, Siantar Zoo menjadi salah satu destinasi wisata unggulan di Sumatera Utara yang cocok untuk dikunjungi oleh semua kalangan."
+    "deskripsiUtama": "Danau Toba adalah danau vulkanik terbesar di Indonesia sekaligus salah satu yang terbesar di dunia, terletak di Provinsi Sumatera Utara.",
+    "deskripsi": "Danau Toba adalah danau vulkanik terbesar di Indonesia sekaligus salah satu yang terbesar di dunia, terletak di Provinsi Sumatera Utara. Danau ini terbentuk akibat letusan gunung berapi super sekitar 74.000 tahun yang lalu, meninggalkan kaldera raksasa yang kini dipenuhi air dan membentuk panorama menakjubkan. Di tengah Danau Toba terdapat Pulau Samosir, sebuah pulau besar yang memiliki daya tarik budaya dan keindahan alam tersendiri, menjadikannya tujuan wisata favorit bagi wisatawan domestik maupun mancanegara. Selain keindahan alamnya yang luar biasa, Danau Toba juga kaya akan budaya dan tradisi masyarakat Batak yang mendiami kawasan sekitarnya. Wisatawan dapat menikmati perpaduan antara pemandangan danau yang luas, pegunungan hijau yang mengelilinginya, serta keramahan penduduk lokal dengan adat dan seni khas Batak. Suasana sejuk, tenang, dan eksotis membuat Danau Toba bukan hanya sekadar destinasi wisata, tetapi juga tempat yang sarat akan sejarah, legenda, dan kekayaan budaya Nusantara."
   },
-  {
+   {
     "id": 3,
     "kategori": "gunung",
     "nama": "Gunung Lubuk raya ",
@@ -35,6 +35,18 @@
     "deskripsiUtama": "Gunung Lubuk Raya adalah gunung tertinggi di Kabupaten Tapanuli Selatan, Sumatera Utara, dengan ketinggian sekitar 1.862 meter di atas permukaan laut. ",
     "deskripsi": "Gunung Lubuk Raya adalah gunung tertinggi di Kabupaten Tapanuli Selatan, Sumatera Utara, dengan ketinggian sekitar 1.862 meter di atas permukaan laut. Gunung ini dikelilingi hutan tropis yang rimbun dan masih asri, menjadikannya rumah bagi berbagai jenis tumbuhan dan satwa khas Sumatra. Keindahan alamnya yang sejuk dan hijau membuat Gunung Lubuk Raya menjadi salah satu daya tarik wisata alam sekaligus sumber kehidupan masyarakat sekitar. Selain keindahan alam, Gunung Lubuk Raya juga memiliki nilai budaya dan spiritual bagi masyarakat Tapanuli Selatan. Jalur pendakiannya menantang dengan medan berbukit, tetapi menawarkan panorama menawan dari puncaknya, termasuk hamparan hutan luas dan pemukiman di sekitarnya. Gunung ini tidak hanya menjadi tujuan pendakian, tetapi juga berperan penting sebagai daerah tangkapan air yang menjaga keseimbangan ekosistem dan mendukung kebutuhan hidup warga di sekitarnya"
   },
+  {
+    "id": 16,
+    "kategori": "kebun binatang",
+    "nama": "Siantar Zoo",
+    "gambarUtama": "https://drive.google.com/uc?id=1KEkL3rZQAynLKh7dUOn8y6J8yCzNf8QL",
+    "galeri": [
+      "https://drive.google.com/uc?id=1HNS7v7Yi7jmPx3fkh6FYo7Snie2t4Jx4"
+    ],
+    "deskripsiUtama": "Siantar Zoo, atau dikenal juga sebagai Kebun Binatang Pematang Siantar, merupakan salah satu kebun binatang tertua di Sumatera Utara.",
+    "deskripsi": "Siantar Zoo, atau dikenal juga sebagai Kebun Binatang Pematang Siantar, merupakan salah satu kebun binatang tertua di Sumatera Utara. Terletak di Kota Pematang Siantar, kebun binatang ini memiliki koleksi satwa yang cukup lengkap, baik satwa lokal maupun mancanegara. Suasana yang sejuk dan rindang membuat pengunjung betah berlama-lama, sekaligus memberikan pengalaman edukatif untuk mengenal berbagai jenis hewan dari dekat.Selain menghadirkan koleksi satwa, Siantar Zoo juga menjadi ruang rekreasi keluarga yang dilengkapi dengan area bermain dan fasilitas pendukung wisata. Kebun binatang ini memiliki peran penting dalam konservasi satwa langka serta sebagai sarana pendidikan lingkungan bagi masyarakat. Dengan perpaduan antara hiburan, edukasi, dan konservasi, Siantar Zoo menjadi salah satu destinasi wisata unggulan di Sumatera Utara yang cocok untuk dikunjungi oleh semua kalangan."
+  },
+ 
   {
     "id": 1,
     "kategori": "gunung",
@@ -458,22 +470,11 @@
     "deskripsiUtama": " Danau Siombak adalah sebuah danau buatan yang terletak di Medan Marelan, Sumatera Utara.",
     "deskripsi": "Danau Siombak adalah sebuah danau buatan yang terletak di Medan Marelan, Sumatera Utara. Danau ini terbentuk dari bekas galian tanah yang kemudian terisi air, sehingga menghadirkan panorama alam yang menarik dan menjadi destinasi wisata favorit masyarakat sekitar. Dengan luas sekitar 40 hektar, Danau Siombak dikelilingi pepohonan hijau serta udara yang sejuk, menciptakan suasana nyaman bagi pengunjung yang ingin bersantai. Selain keindahan alamnya, Danau Siombak juga menawarkan berbagai aktivitas menarik seperti memancing, berperahu, atau menikmati kuliner khas di warung-warung sekitar. Tempat ini sering dijadikan tujuan rekreasi keluarga karena suasananya yang tenang dan fasilitas yang cukup memadai. Pemandangan matahari terbenam di Danau Siombak pun menjadi momen yang indah, menjadikannya destinasi wisata yang memadukan keasrian alam dan hiburan sederhana bagi masyarakat Medan dan sekitarnya."
   },
-  {
-    "id": 38,
-    "kategori": "danau",
-    "nama": "Danau Toba",
-    "gambarUtama": "https://drive.google.com/uc?id=1mZoeETjo-3AwbmRI_ldWUEEkhR8j3vlh",
-    "galeri": [
-      "https://drive.google.com/uc?id=1XJqWUl2dWklbM7ya4HXYtc3ehQR8emQl",
-      "https://drive.google.com/uc?id=1iDFcHrTNyiKUV91N_TbhGk3JZUhCC-dW"
-    ],
-    "deskripsiUtama": "Danau Toba adalah danau vulkanik terbesar di Indonesia sekaligus salah satu yang terbesar di dunia, terletak di Provinsi Sumatera Utara.",
-    "deskripsi": "Danau Toba adalah danau vulkanik terbesar di Indonesia sekaligus salah satu yang terbesar di dunia, terletak di Provinsi Sumatera Utara. Danau ini terbentuk akibat letusan gunung berapi super sekitar 74.000 tahun yang lalu, meninggalkan kaldera raksasa yang kini dipenuhi air dan membentuk panorama menakjubkan. Di tengah Danau Toba terdapat Pulau Samosir, sebuah pulau besar yang memiliki daya tarik budaya dan keindahan alam tersendiri, menjadikannya tujuan wisata favorit bagi wisatawan domestik maupun mancanegara. Selain keindahan alamnya yang luar biasa, Danau Toba juga kaya akan budaya dan tradisi masyarakat Batak yang mendiami kawasan sekitarnya. Wisatawan dapat menikmati perpaduan antara pemandangan danau yang luas, pegunungan hijau yang mengelilinginya, serta keramahan penduduk lokal dengan adat dan seni khas Batak. Suasana sejuk, tenang, dan eksotis membuat Danau Toba bukan hanya sekadar destinasi wisata, tetapi juga tempat yang sarat akan sejarah, legenda, dan kekayaan budaya Nusantara."
-  },
+
   {
     "id": 39,
     "kategori": "danau",
-    "nama": "Danau Sidihoni",
+    "nama": "Danau Lau Kawar",
     "gambarUtama": "https://drive.google.com/uc?id=1z4zDRdZRHdC7dUxj7w5hsgLOYvLXWJfK",
     "galeri": [
       "https://drive.google.com/uc?id=1A48tN8CxvAnGUfx-IhirrLWWh_sCy4-N",

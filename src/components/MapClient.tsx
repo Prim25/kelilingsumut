@@ -19,9 +19,11 @@ import { FEATURED_SUMUT, type FeaturedPlace } from "@/data/featured";
 // @ts-expect-error leaflet icons typing bug (safe)
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
-  iconRetinaUrl: (await import("leaflet/dist/images/marker-icon-2x.png")).default.src,
+  iconRetinaUrl: (await import("leaflet/dist/images/marker-icon-2x.png"))
+    .default.src,
   iconUrl: (await import("leaflet/dist/images/marker-icon.png")).default.src,
-  shadowUrl: (await import("leaflet/dist/images/marker-shadow.png")).default.src,
+  shadowUrl: (await import("leaflet/dist/images/marker-shadow.png")).default
+    .src,
 });
 
 // ===== Simple emoji icons for POIs =====
@@ -110,9 +112,10 @@ export default function MapClient({
   selectedCategory: string;
   searchText: string;
 }) {
-  const [raw, setRaw] = useState<
-    FeatureCollection<Geometry, GeoProperties> | null
-  >(null);
+  const [raw, setRaw] = useState<FeatureCollection<
+    Geometry,
+    GeoProperties
+  > | null>(null);
   const geoJsonRef = useRef<LGeoJSON>(null);
   const [active, setActive] = useState<FeaturedPlace | null>(null);
   const [hotels, setHotels] = useState<Poi[]>([]);
@@ -284,7 +287,11 @@ export default function MapClient({
               />
 
               {hotels.map((h) => (
-                <Marker key={`h-${h.id}`} position={[h.lat, h.lng]} icon={hotelIcon}>
+                <Marker
+                  key={`h-${h.id}`}
+                  position={[h.lat, h.lng]}
+                  icon={hotelIcon}
+                >
                   <Popup>
                     <strong>Hotel</strong>
                     <div>{h.name}</div>
@@ -293,7 +300,11 @@ export default function MapClient({
               ))}
 
               {restaurants.map((r) => (
-                <Marker key={`r-${r.id}`} position={[r.lat, r.lng]} icon={foodIcon}>
+                <Marker
+                  key={`r-${r.id}`}
+                  position={[r.lat, r.lng]}
+                  icon={foodIcon}
+                >
                   <Popup>
                     <strong>Restaurant</strong>
                     <div>{r.name}</div>
@@ -305,35 +316,54 @@ export default function MapClient({
         </MapContainer>
       </div>
 
-      <aside className="border rounded-2xl p-4 bg-white h-[520px] overflow-y-auto">
+      <aside className="border rounded-2xl p-5 bg-white h-[520px] overflow-y-auto shadow-sm font-display">
         {active ? (
           <div>
-            <h3 className="text-lg font-bold">{active.name}</h3>
-            <p className="text-sm text-gray-600 mt-1">{active.blurb}</p>
-
-            <div className="mt-3 text-sm">
-              {loadingPoi ? (
-                "Loading nearby hotels & restaurants…"
-              ) : (
-                <>
-                  <h4 className="font-semibold mt-2">Nearby hotels</h4>
-                  <ul className="list-disc ml-5">
-                    {hotels.slice(0, 8).map((h) => (
-                      <li key={h.id}>{h.name}</li>
-                    ))}
-                  </ul>
-                  <h4 className="font-semibold mt-3">Nearby restaurants</h4>
-                  <ul className="list-disc ml-5">
-                    {restaurants.slice(0, 8).map((r) => (
-                      <li key={r.id}>{r.name}</li>
-                    ))}
-                  </ul>
-                </>
-              )}
+            {/* lokasi */}
+            <div className="bg-gray-100 rounded-xl px-3 py-2 text-sm text-gray-700 flex items-start gap-2">
+              <span>📍</span>
+              <p>{active.location || "Lokasi tidak tersedia"}</p>
             </div>
 
+            <h3 className="text-xl font-bold mt-4">{active.name}</h3>
+
+            <p className="text-sm text-gray-700 mt-2 leading-relaxed">
+              {active.blurb}
+            </p>
+
+            {/* Jam buka */}
+            <p className="text-xs text-gray-400 mt-2">
+              Open Hours: 8:00 WIB - 18:00 WIB
+            </p>
+
+            {/* Hotel & re */}
+            <div className="flex justify-between gap-6 mt-4 text-sm">
+              <div className="w-1/2">
+                <h4 className="bg-gray-100 px-3 py-1.5 rounded-lg font-semibold text-gray-800">
+                  Hotel
+                </h4>
+                <ul className="list-disc ml-5 mt-2 space-y-1">
+                  {hotels.slice(0, 6).map((h) => (
+                    <li key={h.id}>{h.name || "(no name)"}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="w-1/2">
+                <h4 className="bg-gray-100 px-3 py-1.5 rounded-lg font-semibold text-gray-800">
+                  Restaurant
+                </h4>
+                <ul className="list-disc ml-5 mt-2 space-y-1">
+                  {restaurants.slice(0, 6).map((r) => (
+                    <li key={r.id}>{r.name || "(no name)"}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Tombol reset */}
             <button
-              className="mt-4 text-sm px-3 py-1.5 rounded border hover:bg-blue-50"
+              className="mt-5 text-sm px-3 py-1.5 rounded-lg border hover:bg-gray-50 transition-colors"
               onClick={() => {
                 setActive(null);
                 setHotels([]);

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useDestinations } from "@/context/ArticleDestinasi";
 import { CiSearch } from "react-icons/ci";
@@ -14,12 +14,14 @@ const MapClient = dynamic(() => import("@/components/MapClient"), {
 });
 
 export default function DestinationsList() {
+const filterRef = useRef<HTMLDivElement>(null);
   const { destinations } = useDestinations();
   const [selectedCategory, setSelectedCategory] = useState("semua");
   const [currentPage, setCurrentPage] = useState(1);
   const [search, setSearch] = useState("");
   const searchParams = useSearchParams();
   const category = searchParams.get("kategori");
+  const [showFilter, setShowFilter] = useState(false);
 
   useEffect(() => {
     if (category) {
@@ -82,11 +84,78 @@ export default function DestinationsList() {
             />
             <CiSearch className="text-2xl" />
           </div>
-          <div className="p-3  rounded-full border border-gray-800">
+          <button
+            className="p-3 rounded-full border border-gray-800 bg-white"
+            onClick={() => setShowFilter((v) => !v)}
+            aria-label="Tampilkan Filter"
+          >
             <IoFilterOutline />
-          </div>
+          </button>
         </div>
+
+        {/* FILTER MENU POPUP */}
+        {showFilter && (
+          <div 
+            ref={filterRef}
+            className="absolute top-66 right-10 z-30 max-w-md w-[350px] bg-white border rounded-xl p-6 shadow"
+          >
+            <h3 className="font-bold text-lg mb-4">
+              Temukan Rekomendasi Wisata
+            </h3>
+            {/* Usia */}
+            <div className="mb-4">
+              <label className="block font-semibold mb-2">Usia</label>
+              <div className="grid grid-cols-2 gap-2">
+                <button className="border rounded-full px-4 py-2">
+                  Anak-anak (0-12 tahun)
+                </button>
+                <button className="border rounded-full px-4 py-2">
+                  Remaja (13-19 tahun)
+                </button>
+                <button className="border rounded-full px-4 py-2">
+                  Dewasa (20-45 tahun)
+                </button>
+                <button className="border rounded-full px-4 py-2">
+                  Lansia (50+ tahun)
+                </button>
+              </div>
+            </div>
+            {/* Kategori Wisata */}
+            <div className="mb-4 ">
+              <label className="block font-semibold mb-2">
+                Kategori Wisata
+              </label>
+              <select
+                className="border rounded-full px-4 py-2 w-full"
+                value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)}
+              >
+                <option value="">Pilih Kategori Wisata</option>
+                {categories.map((kategori, idx) => (
+                  <option key={idx} value={kategori}>
+                    {kategori}
+                  </option>
+                ))}
+              </select>
+            </div>
+            {/* Harga */}
+            <div className="mb-4">
+              <label className="block font-semibold mb-2">Harga</label>
+              <select className="border rounded-full px-4 py-2 w-full">
+                <option>Pilih Rentang Harga</option>
+                <option>Gratis</option>
+                <option>&lt; Rp 50.000</option>
+                <option>Rp 50.000 - Rp 100.000</option>
+                <option>&gt; Rp 100.000</option>
+              </select>
+            </div>
+            <button className="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold mt-2">
+              Kirim
+            </button>
+          </div>
+        )}
       </div>
+
       {/* =================================================================MAP================================================================ */}
       <div className="mt-6">
         <MapClient
