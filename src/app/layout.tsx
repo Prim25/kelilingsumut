@@ -1,3 +1,4 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
@@ -19,19 +20,21 @@ const fontMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Keliling Sumut",
   description: "Keliling Sumut",
+  viewport: "width=device-width, initial-scale=1",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        {/* Tag head lain jika ada */}
-      </head>
       <body className={`${fontbri.variable} ${fontMono.variable} antialiased`}>
         <DestinationProvider>
           <ArticleProvider>

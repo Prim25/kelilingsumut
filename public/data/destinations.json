@@ -62,6 +62,18 @@
     "deskripsi": " Air Terjun Sipiso-piso adalah salah satu ikon wisata alam di Sumatera Utara yang terletak di dekat Desa Tongging, Kabupaten Karo. Dengan ketinggian sekitar 120 meter, air terjun ini menjulang megah dari tebing tinggi dan menjatuhkan air deras yang berkilau bak benang perak. Keindahannya semakin menawan karena letaknya yang menghadap langsung ke panorama Danau Toba, sehingga pengunjung bisa menikmati perpaduan pemandangan air terjun dan danau terbesar di Indonesia dalam satu tempat.Selain panorama yang memukau, kawasan Air Terjun Sipiso-piso juga dilengkapi dengan gardu pandang yang memungkinkan wisatawan melihat keindahan alam dari ketinggian. Suasana sejuk khas dataran tinggi Karo membuat tempat ini sangat cocok untuk bersantai sekaligus berfoto. Dengan gemuruh air yang jatuh, udara segar pegunungan, serta lanskap Danau Toba yang memanjakan mata, Sipiso-piso menjadi destinasi wisata yang wajib dikunjungi saat berada di Sumatera Utara."
   },
   {
+    "id": 41,
+    "kategori": "danau",
+    "nama": "Danau Linting",
+    "gambarUtama": "https://drive.google.com/uc?id=1b45HsoTK4jgNQJdcJM4kZk8KgSm7STDI",
+    "galeri": [
+      "https://drive.google.com/uc?id=1_C0zjgtRZmwqS10ILlRPt9ePr9jvpbgW",
+      "https://drive.google.com/uc?id=1PkomFcZyNCxZOXBLX8zVLJlha-SQWEBm"
+    ],
+    "deskripsiUtama": "Danau Linting adalah sebuah danau cantik yang terletak di Kabupaten Deli Serdang, Sumatera Utara.",
+    "deskripsi": "Danau Linting adalah sebuah danau cantik yang terletak di Kabupaten Deli Serdang, Sumatera Utara. Danau ini terkenal dengan warna airnya yang unik, yaitu perpaduan biru kehijauan yang jernih dan memukau. Suasananya masih alami, dikelilingi pepohonan rindang dan udara sejuk yang membuat pengunjung betah berlama-lama menikmati keindahannya. Keunikan lain dari Danau Linting adalah kandungan belerangnya, sehingga airnya terasa hangat dan menambah daya tarik bagi wisatawan. Selain panorama alamnya yang indah, Danau Linting juga menjadi pilihan tepat untuk bersantai dan melepas penat. Banyak pengunjung yang datang untuk menikmati pemandangan sambil berfoto di tepian danau yang eksotis. Meski belum terlalu ramai seperti objek wisata lain di Sumatera Utara, Danau Linting justru menawarkan ketenangan dan keasrian yang membuat suasana semakin damai. Tempat ini cocok bagi siapa saja yang ingin merasakan keindahan alam sekaligus ketenangan jiwa."
+  },
+  {
     "id": 5,
     "kategori": "gunung",
     "nama": "Gunung Sibarus",
@@ -373,6 +385,18 @@
     "deskripsi": " Air Terjun Sikulikap adalah destinasi alam yang menawan di Kabupaten Karo, Sumatera Utara. Air terjun ini memiliki ketinggian sekitar 30 meter dengan aliran air yang jernih dan deras, jatuh di tengah rimbunnya pepohonan hutan tropis. Suasana sejuk khas dataran tinggi Berastagi menambah daya tarik tersendiri, membuat pengunjung betah berlama-lama menikmati keindahan alam yang masih asri dan alami.Selain pemandangannya yang indah, kawasan Air Terjun Sikulikap juga sering menjadi titik awal bagi para pencinta alam yang ingin mendaki Gunung Sibayak. Kejernihan air, gemuruh yang menenangkan, serta kesejukan udara pegunungan menjadikan tempat ini cocok untuk bersantai, berfoto, atau sekadar melepas penat. Kombinasi panorama air terjun dan hutan yang hijau membuat Sikulikap menjadi salah satu destinasi wisata alam unggulan di Tanah Karo."
   },
   {
+    "id": 43,
+    "kategori": "danau",
+    "nama": "Pulau Samosir",
+    "gambarUtama": "https://drive.google.com/uc?1WZ6QA5eu-UwTuLXDQW-4Q3ZVGFJ2hrBO",
+    "galeri": [
+      "https://drive.google.com/uc?id=1TVFPe8zTVwIvQEANjyw3ASMlYs6Of6Tr ",
+      "https://drive.google.com/uc?id=10kNs5QhxDnaMxrG6SWmxXZLM6QuF5_CB"
+    ],
+    "deskripsiUtama": "Pulau Samosir adalah pulau vulkanik yang berada di tengah Danau Toba, Sumatera Utara, sekaligus menjadi salah satu ikon wisata paling terkenal di Indonesia.",
+    "deskripsi": "Pulau Samosir adalah pulau vulkanik yang berada di tengah Danau Toba, Sumatera Utara, sekaligus menjadi salah satu ikon wisata paling terkenal di Indonesia. Pulau ini menawarkan keindahan alam yang menakjubkan dengan panorama danau yang luas, perbukitan hijau, serta udara sejuk yang menyegarkan. Pemandangan alam yang memukau berpadu dengan suasana tenang menjadikan Pulau Samosir sebagai destinasi favorit bagi wisatawan yang ingin menikmati ketenangan dan keindahan Danau Toba dari dekat. Selain pesona alamnya, Pulau Samosir juga kaya akan budaya dan tradisi masyarakat Batak Toba yang mendiami wilayah ini. Wisatawan dapat menemukan rumah adat Batak, menyaksikan pertunjukan seni tradisional, hingga mengunjungi situs bersejarah dan peninggalan leluhur. Keaslian budaya yang masih terjaga berpadu dengan keramahan penduduk lokal menjadikan Pulau Samosir bukan hanya tempat wisata alam, tetapi juga pusat wisata budaya yang memberikan pengalaman berkesan bagi setiap pengunjung."
+  },
+  {
     "id": 33,
     "kategori": "Gunung",
     "nama": "Gunung Sorik Merapi ",
@@ -409,6 +433,7 @@
     "deskripsiUtama": "Gunung Sinabung adalah gunung berapi aktif yang terletak di Kabupaten Karo, Sumatera Utara, dengan ketinggian sekitar 2.460 meter di atas permukaan laut.",
     "deskripsi": "Gunung Sinabung adalah gunung berapi aktif yang terletak di Kabupaten Karo, Sumatera Utara, dengan ketinggian sekitar 2.460 meter di atas permukaan laut. Gunung ini merupakan bagian dari Bukit Barisan dan dikelilingi pemandangan alam yang indah serta udara sejuk khas pegunungan. Sebelum kembali erupsi pada tahun 2010 setelah ratusan tahun tertidur, Sinabung dikenal sebagai salah satu destinasi pendakian yang menarik dengan jalur hutan tropis yang rimbun dan panorama spektakuler dari puncaknya. Namun, sejak letusan besarnya, Gunung Sinabung menjadi salah satu gunung teraktif di Indonesia dengan aktivitas vulkanik yang cukup tinggi. Erupsi demi erupsi tidak hanya mengubah bentuk kawah dan lanskap sekitarnya, tetapi juga berdampak besar pada kehidupan masyarakat Karo, termasuk relokasi penduduk dari daerah rawan bencana. Meski demikian, Gunung Sinabung tetap memiliki pesona alam yang khas dan menjadi simbol kekuatan alam di Tanah Karo."
   },
+
   {
     "id": 36,
     "kategori": "danau",
@@ -456,5 +481,30 @@
     ],
     "deskripsiUtama": "Danau Lau Kawar adalah danau alami yang terletak di kaki Gunung Sinabung, Kabupaten Karo, Sumatera Utara.",
     "deskripsi": "Danau Lau Kawar adalah danau alami yang terletak di kaki Gunung Sinabung, Kabupaten Karo, Sumatera Utara. Danau ini menyuguhkan panorama indah dengan airnya yang jernih serta dikelilingi oleh hutan hijau dan perbukitan yang menenangkan. Suasana sejuk khas pegunungan berpadu dengan keheningan alam membuat Danau Lau Kawar menjadi tempat yang ideal untuk melepas penat, menikmati keindahan alam, atau sekadar beristirahat sambil menghirup udara segar. Selain keindahan alamnya, Danau Lau Kawar juga sering dijadikan lokasi untuk berkemah dan menikmati suasana malam yang damai di bawah langit berbintang. Pemandangan Gunung Sinabung yang menjulang megah di dekat danau menambah daya tarik tersendiri, memberikan pengalaman wisata yang unik bagi para pengunjung. Tempat ini menjadi pilihan tepat bagi pencinta alam dan siapa saja yang ingin merasakan ketenangan sekaligus pesona alam pegunungan yang masih asri."
+  },
+  {
+    "id": 40,
+    "kategori": "danau",
+    "nama": "Danau Siais",
+    "gambarUtama": "https://drive.google.com/uc?id=1RwuGddTQLhVHIRSCWi0iGQWuiDIsMO3l",
+    "galeri": [
+      "https://drive.google.com/uc?id=1UKwiX8xLuNjLq8V_R556o6x5jIpIpvsf",
+      "https://drive.google.com/uc?id=1TWlSElTKeJjDhBTacxAMrS-CquPMV3sS"
+    ],
+    "deskripsiUtama": "Danau Siais adalah salah satu danau terluas di Sumatera Utara yang terletak di Kabupaten Tapanuli Selatan",
+    "deskripsi": "Danau Siais adalah salah satu danau terluas di Sumatera Utara yang terletak di Kabupaten Tapanuli Selatan. Danau ini menyuguhkan panorama alam yang menawan dengan airnya yang tenang serta dikelilingi perbukitan hijau yang indah. Keasrian alam di sekitar Danau Siais membuatnya tampak seperti permata tersembunyi yang menyimpan pesona luar biasa, sekaligus menjadi tempat yang cocok untuk melepas penat dari kesibukan sehari-hari. Selain keindahan pemandangannya, Danau Siais juga memiliki nilai penting bagi masyarakat sekitar sebagai sumber kehidupan, terutama dalam bidang perikanan. Suasana damai dengan hembusan angin sejuk serta pemandangan matahari terbit dan terbenam di atas permukaan danau menambah daya tarik tersendiri. Wisatawan yang datang dapat menikmati keindahan alam sambil berinteraksi dengan masyarakat lokal yang ramah, menjadikan kunjungan ke Danau Siais pengalaman yang tak terlupakan."
+  },
+
+  {
+    "id": 42,
+    "kategori": "danau",
+    "nama": "Danau Aek Natonang",
+    "gambarUtama": "https://drive.google.com/uc?id=1Cnql7D4hcqc4wFHnQN4cGKIqkTkMfXPT",
+    "galeri": [
+      "https://drive.google.com/uc?id=1LTcSYjVzTqd6g3xJHnuIeW97hhV9PGCH",
+      "https://drive.google.com/uc?id=1Amku_-CBbC6OgBr4TrVeaM_D5XOyXFb_"
+    ],
+    "deskripsiUtama": "Danau Aek Natonang adalah salah satu keindahan alam yang terletak di Pulau Samosir, Sumatera Utara. ",
+    "deskripsi": "Danau Aek Natonang adalah salah satu keindahan alam yang terletak di Pulau Samosir, Sumatera Utara. Keunikan danau ini adalah keberadaannya yang sering disebut sebagai “danau di atas danau” karena berada di Pulau Samosir yang sendiri terletak di tengah Danau Toba. Pemandangan di sekitar Aek Natonang masih sangat alami, dikelilingi pepohonan hijau, udara segar, serta suasana tenang yang cocok untuk melepas penat dan menikmati keindahan ciptaan Tuhan. Selain pesona alamnya, Danau Aek Natonang juga menjadi destinasi wisata yang menarik karena memberikan pengalaman berbeda bagi para pengunjung. Airnya yang jernih berpadu dengan hamparan perbukitan dan ladang masyarakat setempat, menciptakan panorama yang menenangkan. Tempat ini juga sering dijadikan spot berfoto karena pemandangan uniknya, serta sebagai lokasi untuk menikmati ketenangan jauh dari hiruk pikuk keramaian kota."
   }
 ]

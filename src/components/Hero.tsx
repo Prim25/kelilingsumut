@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Hero = () => {

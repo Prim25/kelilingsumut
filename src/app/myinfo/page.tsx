@@ -222,7 +222,9 @@ const TentangKamiPage: React.FC = () => {
             }}
           />
         </div>
-        <p className="text-xl font-bold text-blue-700 animate-pulse">Memuat...</p>
+        <p className="text-xl font-bold text-blue-700 animate-pulse">
+          Memuat...
+        </p>
       </div>
     );
   }
@@ -270,25 +272,29 @@ const TentangKamiPage: React.FC = () => {
       </section>
 
       {/* Visi & Misi */}
-      <section className="py-12 bg-gray-50 px-desk">
-        <div className="container mx-auto px-6">
+      <section className="py-12 bg-gray-50 px-4 sm:px-6 md:px-desk">
+        <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-yellow-100 p-6 rounded-lg shadow-md"
+              className="bg-yellow-100 p-6 rounded-lg shadow-md transition-transform duration-300"
             >
-              <h3 className="text-xl font-semibold mb-2">Visi Kami</h3>
-              <p>
+              <h3 className="text-xl font-semibold mb-2 text-center md:text-left">
+                Visi Kami
+              </h3>
+              <p className="text-gray-700 text-center md:text-left">
                 Menjadikan Sumatera Utara sebagai destinasi unggulan yang
                 dikenal luas, baik di tingkat nasional maupun internasional.
               </p>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-blue-100 p-6 rounded-lg shadow-md"
+              className="bg-blue-100 p-6 rounded-lg shadow-md transition-transform duration-300"
             >
-              <h3 className="text-xl font-semibold mb-2">Misi Kami</h3>
-              <ul className="list-disc list-inside text-gray-700 space-y-1 text-left">
+              <h3 className="text-xl font-semibold mb-2 text-center md:text-left">
+                Misi Kami
+              </h3>
+              <ul className="list-disc list-inside text-gray-700 space-y-1 text-center md:text-left">
                 <li>
                   Memberikan informasi wisata yang lengkap, akurat, dan mudah
                   diakses.
@@ -396,16 +402,17 @@ const TentangKamiPage: React.FC = () => {
               />
               <h3 className="text-xl font-bold">{selectedMember.name}</h3>
               <p className="text-gray-600">{selectedMember.role}</p>
-              {selectedMember.linkGithub && selectedMember.linkGithub !== "" && (
-                <a
-                  href={selectedMember.linkGithub}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-                >
-                  Lihat Github
-                </a>
-              )}
+              {selectedMember.linkGithub &&
+                selectedMember.linkGithub !== "" && (
+                  <a
+                    href={selectedMember.linkGithub}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                  >
+                    Lihat Github
+                  </a>
+                )}
             </motion.div>
           </motion.div>
         )}

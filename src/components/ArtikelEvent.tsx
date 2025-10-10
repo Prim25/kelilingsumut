@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import styles from "./Layout.module.css";
 import Image from "next/image";
 import { useArticles } from "@/context/ArticleContext";
 import Link from "next/link";
